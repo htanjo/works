@@ -1,0 +1,35 @@
+.section {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  padding: 32px 64px;
+  background-color: #f1efed;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  flex-shrink: 0;
+  min-width: 320px;
+}
+.title {
+  margin-top: 0;
+}
+.images {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  gap: 16px;
+}
+.imageColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  &.even {
+    padding-top: 10%;
+  }
+}
+.image {
+  display: block;
+  max-width: 100%;
+}
