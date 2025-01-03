@@ -9,11 +9,21 @@ export interface Image {
 
 interface SectionProps {
   title: string;
+  info: ReactNode;
   description: ReactNode;
   images: Image[];
+  primaryColor: string;
+  secondaryColor: string;
 }
 
-function Section({ title, description, images }: SectionProps) {
+function Section({
+  title,
+  info,
+  description,
+  images,
+  primaryColor,
+  secondaryColor,
+}: SectionProps) {
   const evenImages = useMemo(
     () => images.filter((_image, index) => !((index + 1) % 2)),
     [images],
@@ -23,10 +33,18 @@ function Section({ title, description, images }: SectionProps) {
     [images],
   );
   return (
-    <div className={classes.section}>
+    <div
+      className={classes.section}
+      style={{
+        // @ts-ignore
+        '--primary-color': primaryColor,
+        '--secondary-color': secondaryColor,
+      }}
+    >
       <div className={classes.sectionContainer}>
         <div className={classes.text}>
           <h2 className={classes.title}>{title}</h2>
+          <div className={classes.info}>{info}</div>
           <div className={classes.description}>{description}</div>
         </div>
         <div className={classes.images}>

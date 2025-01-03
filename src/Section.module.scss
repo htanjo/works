@@ -1,14 +1,38 @@
 .section {
+  position: relative;
+  overflow: hidden;
   background-color: #f1efed;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 36px;
+    background-color: var(--secondary-color);
+  }
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 36px;
+    background-color: var(--primary-color);
+    transform: skew(-1.5deg);
+    translate: -16px;
+  }
 }
 .sectionContainer {
   display: flex;
   flex-direction: row;
-  gap: 32px;
+  gap: 48px;
   max-width: var(--container-max-width);
   margin-left: auto;
   margin-right: auto;
-  padding: 32px 64px;
+  padding: 32px 64px 32px 72px;
 }
 .text {
   flex-basis: 30%;
@@ -16,22 +40,42 @@
   min-width: 320px;
 }
 @media (max-width: 900px) {
+  .section {
+    &::before {
+      right: 0;
+      bottom: auto;
+      width: auto;
+      height: 36px;
+    }
+    &::after {
+      right: 0;
+      bottom: auto;
+      width: auto;
+      height: 36px;
+      transform: skew(0deg, -1.5deg);
+      translate: 0 -16px;
+    }
+  }
   .sectionContainer {
     flex-direction: column;
     gap: 24px;
-    padding: 24px 16px;
+    padding: 58px 16px 32px;
   }
   .text {
-    min-width: none;
+    min-width: auto;
   }
 }
 
 .title {
   margin: 0 0 16px;
 }
+.info {
+  font-size: 0.8em;
+  margin-bottom: 24px;
+}
 .description > div,
 .description > p {
-  margin: 0 0 16px;
+  margin: 0 0 12px;
 }
 .description > *:last-child {
   margin-bottom: 0;
