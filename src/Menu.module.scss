@@ -19,12 +19,14 @@
   flex-direction: row;
   margin: 0 -16px;
   padding: 0;
+  overflow-x: auto;
+  white-space: nowrap;
   list-style-type: none;
 }
 .menuListItem {
   a {
     display: inline-block;
-    padding: 16px;
+    padding: 16px 12px;
     color: #b1a5a5;
     transition: color 300ms;
     &:hover,
@@ -47,6 +49,9 @@
 }
 @media screen and (max-width: 900px) {
   .menuContainer {
-    padding: 16px;
+    padding: 0 16px;
+  }
+  .arrow {
+    display: none;
   }
 }
