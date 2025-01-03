@@ -1,9 +1,36 @@
+import { useEffect, useRef } from 'react';
 import Section from './Section';
 import classes from './Content.module.scss';
 
-function Content() {
+interface ContentProps {
+  onChangeSection: (id: string) => void;
+}
+
+function Content({ onChangeSection }: ContentProps) {
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (contentRef.current) {
+        const anchors = Array.from(
+          contentRef.current.querySelectorAll(`[class*="${classes.anchor}"]`),
+        );
+        let activeSectionId = anchors[0].id;
+        anchors.forEach((anchor) => {
+          if (anchor.getBoundingClientRect().top <= 0) {
+            activeSectionId = anchor.id;
+          }
+        });
+        onChangeSection(activeSectionId);
+      }
+    };
+    handleScroll(); // Set the initial state.
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
   return (
-    <div className={classes.content}>
+    <div className={classes.content} ref={contentRef}>
       <div id="game" className={classes.anchor}>
         <div className={classes.anchorTitle}>ゲーム</div>
       </div>

@@ -1,7 +1,11 @@
 import Menu from './Menu';
 import classes from './Header.module.scss';
 
-function Header() {
+interface HeaderProps {
+  activeMenuId: string;
+}
+
+function Header({ activeMenuId }: HeaderProps) {
   return (
     <>
       <div className={classes.title}>
@@ -9,7 +13,7 @@ function Header() {
           <h1 className={classes.titleText}>htanjo's works</h1>
         </div>
       </div>
-      <Menu activeId="game" />
+      <Menu activeId={activeMenuId} />
     </>
   );
 }

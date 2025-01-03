@@ -12,6 +12,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
   &:lang(ja) {
     font-family: 'Noto Sans JP', sans-serif;
     font-feature-settings: 'palt' 1;

@@ -40,7 +40,15 @@
     }
   }
   &.active a {
-    color: var(--foreground-color);
+    &[href='#game'] {
+      color: #e5af70;
+    }
+    &[href='#mod'] {
+      color: #c0c866;
+    }
+    // &:hover {
+    //   color: var(--foreground-color);
+    // }
   }
 }
 .arrow {
