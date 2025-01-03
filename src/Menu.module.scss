@@ -2,7 +2,7 @@
   position: sticky;
   top: 0;
   z-index: 1;
-  color: #ffffff;
+  color: var(--foreground-color);
   background-color: var(--header-color);
   box-shadow: 0 0 6px #00000088;
 }
@@ -31,11 +31,11 @@
     transition: color 300ms;
     &:hover,
     &:focus {
-      color: #ffffff;
+      color: var(--foreground-color);
     }
   }
   &.active a {
-    color: #ffffff;
+    color: var(--foreground-color);
   }
 }
 .arrow {

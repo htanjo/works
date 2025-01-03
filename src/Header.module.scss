@@ -2,7 +2,7 @@
   position: relative;
   z-index: 2;
   margin-bottom: -8px;
-  color: #ffffff;
+  color: var(--foreground-color);
   background-color: var(--header-color);
 }
 .titleContainer {

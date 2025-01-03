@@ -1,7 +1,7 @@
 .section {
   position: relative;
   overflow: hidden;
-  background-color: #f1efed;
+  background-color: var(--foreground-color);
   box-shadow: 0 0 6px #00000022;
   &::before {
     content: '';
