@@ -1,6 +1,6 @@
 .title {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin-bottom: -8px;
   padding-bottom: 8px;
   color: #ffffff;
@@ -15,23 +15,9 @@
 .titleText {
   margin: 0;
 }
-.menu {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  color: #ffffff;
-  background-color: var(--header-color);
-}
-.menuContainer {
-  display: flex;
-  max-width: var(--container-max-width);
-  margin-left: auto;
-  margin-right: auto;
-  padding: 16px 64px 16px 72px;
-}
-@media (max-width: 900px) {
-  .titleContainer,
-  .menuContainer {
+
+@media screen and (max-width: 900px) {
+  .titleContainer {
     padding: 16px;
   }
 }

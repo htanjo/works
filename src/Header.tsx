@@ -1,3 +1,4 @@
+import Menu from './Menu';
 import classes from './Header.module.scss';
 
 function Header() {
@@ -8,9 +9,7 @@ function Header() {
           <h1 className={classes.titleText}>htanjo's works</h1>
         </div>
       </div>
-      <div className={classes.menu}>
-        <div className={classes.menuContainer}>Menu</div>
-      </div>
+      <Menu activeId="game" />
     </>
   );
 }
