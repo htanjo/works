@@ -79,9 +79,12 @@
   font-size: 0.8em;
   margin-bottom: 24px;
 }
-.description > div,
-.description > p {
-  margin: 0 0 16px;
+.description {
+  overflow-wrap: break-word;
+  & > div,
+  & > p {
+    margin: 0 0 16px;
+  }
 }
 .description > *:last-child {
   margin-bottom: 0;

@@ -1,6 +1,6 @@
 .menu {
   position: sticky;
-  top: 0;
+  top: -1px;
   z-index: 1;
   color: var(--foreground-color);
   background-color: var(--header-color);
@@ -40,7 +40,7 @@
 }
 .arrow {
   position: absolute;
-  bottom: -12px;
+  bottom: -11px;
   left: -8px;
   border-top: 12px solid var(--header-color);
   border-left: 8px solid transparent;
