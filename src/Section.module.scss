@@ -1,8 +1,12 @@
 .section {
   position: relative;
   overflow: hidden;
+  margin-bottom: 16px;
   background-color: var(--foreground-color);
   box-shadow: 0 0 6px #00000022;
+  &:last-child {
+    margin-bottom: 0;
+  }
   &::before {
     content: '';
     display: block;
