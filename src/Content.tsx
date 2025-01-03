@@ -17,7 +17,8 @@ function Content({ onChangeSection }: ContentProps) {
         );
         let activeSectionId = anchors[0].id;
         anchors.forEach((anchor) => {
-          if (anchor.getBoundingClientRect().top <= 0) {
+          // 100px offset
+          if (anchor.getBoundingClientRect().top < 100) {
             activeSectionId = anchor.id;
           }
         });
