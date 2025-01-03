@@ -80,22 +80,22 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: 'https://placehold.co/1600x900?text=1',
+            src: '/9th-floor-01.jpg',
             alt: 'The 9th Floor',
             aspectRatio: 16 / 9,
           },
           {
-            src: 'https://placehold.co/1600x900?text=2',
+            src: '/9th-floor-02.jpg',
             alt: 'The 9th Floor',
             aspectRatio: 16 / 9,
           },
           {
-            src: 'https://placehold.co/1600x900?text=3',
+            src: '/9th-floor-03.jpg',
             alt: 'The 9th Floor',
             aspectRatio: 16 / 9,
           },
           {
-            src: 'https://placehold.co/1600x900?text=4',
+            src: '/9th-floor-04.jpg',
             alt: 'The 9th Floor',
             aspectRatio: 16 / 9,
           },

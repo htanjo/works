@@ -102,6 +102,8 @@
 .imageColumn {
   display: flex;
   flex-direction: column;
+  flex-basis: 0;
+  flex-grow: 1;
   gap: 16px;
   &.even {
     padding-top: 10%;
