@@ -24,32 +24,34 @@ function Section({ title, description, images }: SectionProps) {
   );
   return (
     <div className={classes.section}>
-      <div className={classes.text}>
-        <h2 className={classes.title}>{title}</h2>
-        <div className={classes.description}>{description}</div>
-      </div>
-      <div className={classes.images}>
-        <div className={`${classes.imageColumn} ${classes.even}`}>
-          {evenImages.map((image) => (
-            <img
-              key={image.src}
-              src={image.src}
-              alt={image.alt}
-              style={{ aspectRatio: image.aspectRatio }}
-              className={classes.image}
-            />
-          ))}
+      <div className={classes.sectionContainer}>
+        <div className={classes.text}>
+          <h2 className={classes.title}>{title}</h2>
+          <div className={classes.description}>{description}</div>
         </div>
-        <div className={`${classes.imageColumn} ${classes.odd}`}>
-          {oddImages.map((image) => (
-            <img
-              key={image.src}
-              src={image.src}
-              alt={image.alt}
-              style={{ aspectRatio: image.aspectRatio }}
-              className={classes.image}
-            />
-          ))}
+        <div className={classes.images}>
+          <div className={`${classes.imageColumn} ${classes.even}`}>
+            {evenImages.map((image) => (
+              <img
+                key={image.src}
+                src={image.src}
+                alt={image.alt}
+                style={{ aspectRatio: image.aspectRatio }}
+                className={classes.image}
+              />
+            ))}
+          </div>
+          <div className={`${classes.imageColumn} ${classes.odd}`}>
+            {oddImages.map((image) => (
+              <img
+                key={image.src}
+                src={image.src}
+                alt={image.alt}
+                style={{ aspectRatio: image.aspectRatio }}
+                className={classes.image}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

@@ -3,8 +3,14 @@ import classes from './Header.module.scss';
 function Header() {
   return (
     <>
-      <h1 className={classes.title}>htanjo's works</h1>
-      <div className={classes.menu}>Menu</div>
+      <div className={classes.title}>
+        <div className={classes.titleContainer}>
+          <h1 className={classes.titleText}>htanjo's works</h1>
+        </div>
+      </div>
+      <div className={classes.menu}>
+        <div className={classes.menuContainer}>Menu</div>
+      </div>
     </>
   );
 }
