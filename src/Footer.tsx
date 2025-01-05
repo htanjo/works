@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className={classes.footer}>
       <div className={classes.avatar}>
-        <img src="/avatar.jpg" alt="アバター" />
+        <img src="./avatar.jpg" alt="アバター" />
       </div>
       <div className={classes.profile}>
         <div className={classes.name}>

@@ -86,27 +86,27 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: '/9th-floor-01.jpg',
+            src: './9th-floor-01.jpg',
             alt: 'The 9th Floor',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/9th-floor-02.jpg',
+            src: './9th-floor-02.jpg',
             alt: 'The 9th Floor',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/9th-floor-03.jpg',
+            src: './9th-floor-03.jpg',
             alt: 'The 9th Floor',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/9th-floor-04.jpg',
+            src: './9th-floor-04.jpg',
             alt: 'The 9th Floor',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/9th-floor-05.jpg',
+            src: './9th-floor-05.jpg',
             alt: 'The 9th Floor',
             aspectRatio: 16 / 9,
           },
@@ -150,22 +150,22 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: '/pv3d-racing-01.jpg',
+            src: './pv3d-racing-01.jpg',
             alt: 'PV3D Racing',
             aspectRatio: 4 / 3,
           },
           {
-            src: '/pv3d-racing-02.jpg',
+            src: './pv3d-racing-02.jpg',
             alt: 'PV3D Racing',
             aspectRatio: 4 / 3,
           },
           {
-            src: '/pv3d-racing-03.jpg',
+            src: './pv3d-racing-03.jpg',
             alt: 'PV3D Racing',
             aspectRatio: 4 / 3,
           },
           {
-            src: '/pv3d-racing-04.jpg',
+            src: './pv3d-racing-04.jpg',
             alt: 'PV3D Racing',
             aspectRatio: 4 / 3,
           },
@@ -215,22 +215,22 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: '/emotional-vision-01.jpg',
+            src: './emotional-vision-01.jpg',
             alt: 'Emotional Vision 2077',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/emotional-vision-02.jpg',
+            src: './emotional-vision-02.jpg',
             alt: 'Emotional Vision 2077',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/emotional-vision-03.jpg',
+            src: './emotional-vision-03.jpg',
             alt: 'Emotional Vision 2077',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/emotional-vision-04.jpg',
+            src: './emotional-vision-04.jpg',
             alt: 'Emotional Vision 2077',
             aspectRatio: 16 / 9,
           },
@@ -260,12 +260,12 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: '/toussaint-natural-weather-01.jpg',
+            src: './toussaint-natural-weather-01.jpg',
             alt: 'Toussaint Natural Weather',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/toussaint-natural-weather-02.jpg',
+            src: './toussaint-natural-weather-02.jpg',
             alt: 'Toussaint Natural Weather',
             aspectRatio: 16 / 9,
           },
@@ -334,22 +334,22 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: '/dran-01.jpg',
+            src: './dran-01.jpg',
             alt: '変形！黄金剣士ドラン！',
             aspectRatio: 1 / 1,
           },
           {
-            src: '/dran-02.jpg',
+            src: './dran-02.jpg',
             alt: '変形！黄金剣士ドラン！',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/dran-03.jpg',
+            src: './dran-03.jpg',
             alt: '変形！黄金剣士ドラン！',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/dran-04.jpg',
+            src: './dran-04.jpg',
             alt: '変形！黄金剣士ドラン！',
             aspectRatio: 16 / 10,
           },
@@ -379,17 +379,17 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: '/sculpt-01.jpg',
+            src: './sculpt-01.jpg',
             alt: '3Dスカルプト',
             aspectRatio: 935 / 772,
           },
           {
-            src: '/sculpt-02.jpg',
+            src: './sculpt-02.jpg',
             alt: '3Dスカルプト',
             aspectRatio: 3 / 4,
           },
           {
-            src: '/sculpt-03.jpg',
+            src: './sculpt-03.jpg',
             alt: '3Dスカルプト',
             aspectRatio: 1 / 1,
           },
@@ -420,17 +420,17 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: '/interior-vr-01.jpg',
+            src: './interior-vr-01.jpg',
             alt: 'インテリアのVR再現',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/interior-vr-02.jpg',
+            src: './interior-vr-02.jpg',
             alt: 'インテリアのVR再現',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/interior-vr-03.jpg',
+            src: './interior-vr-03.jpg',
             alt: 'インテリアのVR再現',
             aspectRatio: 16 / 9,
           },
@@ -486,27 +486,27 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: '/fanart-01.jpg',
+            src: './fanart-01.jpg',
             alt: 'ファンアート',
             aspectRatio: 4 / 3,
           },
           {
-            src: '/fanart-02.jpg',
+            src: './fanart-02.jpg',
             alt: 'ファンアート',
             aspectRatio: 3 / 4,
           },
           {
-            src: '/fanart-03.jpg',
+            src: './fanart-03.jpg',
             alt: 'ファンアート',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/fanart-04.jpg',
+            src: './fanart-04.jpg',
             alt: 'ファンアート',
             aspectRatio: 64 / 27,
           },
           {
-            src: '/fanart-05.jpg',
+            src: './fanart-05.jpg',
             alt: 'ファンアート',
             aspectRatio: 24 / 13,
           },
@@ -537,22 +537,22 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: '/sketch-01.jpg',
+            src: './sketch-01.jpg',
             alt: 'スケッチ',
             aspectRatio: 2100 / 1438,
           },
           {
-            src: '/sketch-02.jpg',
+            src: './sketch-02.jpg',
             alt: 'スケッチ',
             aspectRatio: 800 / 1165,
           },
           {
-            src: '/sketch-03.jpg',
+            src: './sketch-03.jpg',
             alt: 'スケッチ',
             aspectRatio: 10 / 13,
           },
           {
-            src: '/sketch-04.jpg',
+            src: './sketch-04.jpg',
             alt: 'スケッチ',
             aspectRatio: 3 / 2,
           },
@@ -583,12 +583,12 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: '/arch-01.jpg',
+            src: './arch-01.jpg',
             alt: 'アーチ',
             aspectRatio: 4 / 3,
           },
           {
-            src: '/arch-02.jpg',
+            src: './arch-02.jpg',
             alt: 'アーチ',
             aspectRatio: 4 / 3,
           },
@@ -645,22 +645,22 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: '/kumamon-01.jpg',
+            src: './kumamon-01.jpg',
             alt: '究極変形！グランドくまモン！',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/kumamon-02.jpg',
+            src: './kumamon-02.jpg',
             alt: '究極変形！グランドくまモン！',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/kumamon-03.jpg',
+            src: './kumamon-03.jpg',
             alt: '究極変形！グランドくまモン！',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/kumamon-04.jpg',
+            src: './kumamon-04.jpg',
             alt: '究極変形！グランドくまモン！',
             aspectRatio: 16 / 9,
           },
@@ -709,7 +709,7 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: '/smart-controller-01.jpg',
+            src: './smart-controller-01.jpg',
             alt: 'Smart Controller',
             aspectRatio: 3 / 4,
           },
@@ -742,22 +742,22 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: '/tiger-1-01.jpg',
+            src: './tiger-1-01.jpg',
             alt: 'ドイツ重戦車 タイガー I',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/tiger-1-02.jpg',
+            src: './tiger-1-02.jpg',
             alt: 'ドイツ重戦車 タイガー I',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/tiger-1-03.jpg',
+            src: './tiger-1-03.jpg',
             alt: 'ドイツ重戦車 タイガー I',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/tiger-1-04.jpg',
+            src: './tiger-1-04.jpg',
             alt: 'ドイツ重戦車 タイガー I',
             aspectRatio: 16 / 9,
           },
@@ -788,22 +788,22 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: '/reverse-trike-01.jpg',
+            src: './reverse-trike-01.jpg',
             alt: 'リバース・トライク',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/reverse-trike-02.jpg',
+            src: './reverse-trike-02.jpg',
             alt: 'リバース・トライク',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/reverse-trike-03.jpg',
+            src: './reverse-trike-03.jpg',
             alt: 'リバース・トライク',
             aspectRatio: 16 / 9,
           },
           {
-            src: '/reverse-trike-04.jpg',
+            src: './reverse-trike-04.jpg',
             alt: 'リバース・トライク',
             aspectRatio: 16 / 9,
           },
@@ -841,17 +841,17 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: '/pc-01.jpg',
+            src: './pc-01.jpg',
             alt: '自作PC',
             aspectRatio: 4 / 3,
           },
           {
-            src: '/pc-02.jpg',
+            src: './pc-02.jpg',
             alt: '自作PC',
             aspectRatio: 4 / 5,
           },
           {
-            src: '/pc-01.jpg',
+            src: './pc-01.jpg',
             alt: '自作PC',
             aspectRatio: 4 / 3,
           },
