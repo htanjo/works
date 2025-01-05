@@ -1,6 +1,6 @@
 .content {
   flex-grow: 1;
-  background-color: #e4e0dc;
+  background-color: var(--background-color);
 }
 .anchor {
   position: relative;
@@ -18,7 +18,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 0 64px 0 72px;
-    color: var(--foreground-color);
+    color: var(--paper-color);
     background-color: var(--header-color);
     box-shadow: 0 0 6px #00000088;
     &:not(:first-child) {

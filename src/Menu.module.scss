@@ -2,7 +2,7 @@
   position: sticky;
   top: -1px;
   z-index: 1;
-  color: var(--foreground-color);
+  color: var(--paper-color);
   background-color: var(--header-color);
   box-shadow: 0 0 6px #00000088;
 }
@@ -36,7 +36,7 @@
     transition: color 300ms;
     &:hover,
     &:focus {
-      color: var(--foreground-color);
+      color: var(--paper-color);
     }
   }
   &.active a {
@@ -65,7 +65,7 @@
       color: #a8b1e5;
     }
     // &:hover {
-    //   color: var(--foreground-color);
+    //   color: var(--paper-color);
     // }
   }
 }

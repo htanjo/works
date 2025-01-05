@@ -1,5 +1,6 @@
 import Header from './Header';
 import Content from './Content';
+import Footer from './Footer';
 import classes from './App.module.scss';
 import { useCallback, useState } from 'react';
 
@@ -12,6 +13,7 @@ function App() {
     <div className={classes.app}>
       <Header activeMenuId={activeMenuId} />
       <Content onChangeSection={handleChangeSection} />
+      <Footer />
     </div>
   );
 }

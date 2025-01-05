@@ -1,0 +1,49 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  padding: 32px 64px 32px 72px;
+  background-color: var(--background-color);
+}
+.avatar img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+.name {
+  margin-bottom: 24px;
+}
+.mainName {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.description {
+  margin-bottom: 4px;
+}
+.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  & > li {
+    display: inline-block;
+    margin-right: 16px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .footer {
+    padding: 16px;
+    gap: 8px;
+  }
+  .avatar img {
+    padding: 16px;
+    width: 100px;
+    height: 100px;
+  }
+  .profile {
+    padding-top: 8px;
+    padding-bottom: 16px;
+  }
+  .name {
+    margin-bottom: 16px;
+  }
+}
