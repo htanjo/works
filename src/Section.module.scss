@@ -46,36 +46,6 @@
   flex-shrink: 0;
   min-width: 320px;
 }
-@media screen and (max-width: 900px) {
-  .section {
-    box-shadow: 0 0 8px #00000044;
-    &::before {
-      right: 0;
-      bottom: auto;
-      width: auto;
-      height: 36px;
-      box-shadow: inset 0 -4px 4px -4px #00000055;
-    }
-    &::after {
-      right: 0;
-      bottom: auto;
-      width: auto;
-      height: 36px;
-      transform: skew(0deg, -1.5deg);
-      translate: 0 -16px;
-      box-shadow: inset 0 -4px 4px -4px #00000066;
-    }
-  }
-  .sectionContainer {
-    flex-direction: column;
-    gap: 24px;
-    padding: 58px 16px 32px;
-  }
-  .text {
-    min-width: auto;
-  }
-}
-
 .title {
   margin: 0 0 16px;
 }
@@ -112,4 +82,39 @@
 .image {
   display: block;
   width: 100%;
+}
+@media screen and (max-width: 900px) {
+  .section {
+    box-shadow: 0 0 8px #00000044;
+    &::before {
+      right: 0;
+      bottom: auto;
+      width: auto;
+      height: 36px;
+      box-shadow: inset 0 -4px 4px -4px #00000055;
+    }
+    &::after {
+      right: 0;
+      bottom: auto;
+      width: auto;
+      height: 36px;
+      transform: skew(0deg, -1.5deg);
+      translate: 0 -16px;
+      box-shadow: inset 0 -4px 4px -4px #00000066;
+    }
+  }
+  .sectionContainer {
+    flex-direction: column;
+    gap: 24px;
+    padding: 58px 16px 32px;
+  }
+  .text {
+    min-width: auto;
+  }
+  .images {
+    gap: 8px;
+  }
+  .imageColumn {
+    gap: 8px;
+  }
 }
