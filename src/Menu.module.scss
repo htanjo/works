@@ -41,10 +41,28 @@
   }
   &.active a {
     &[href='#game'] {
-      color: #e5af70;
+      color: #f29d8a;
     }
     &[href='#mod'] {
       color: #c0c866;
+    }
+    &[href='#3dcg'] {
+      color: #e8a855;
+    }
+    &[href='#painting'] {
+      color: #8dc69c;
+    }
+    &[href='#animation'] {
+      color: #dac135;
+    }
+    &[href='#app'] {
+      color: #7eb9c4;
+    }
+    &[href='#model'] {
+      color: #ccc24e;
+    }
+    &[href='#hardware'] {
+      color: #a8b1e5;
     }
     // &:hover {
     //   color: var(--foreground-color);

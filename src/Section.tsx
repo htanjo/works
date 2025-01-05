@@ -56,6 +56,7 @@ function Section({
                 alt={image.alt}
                 style={{ aspectRatio: image.aspectRatio }}
                 className={classes.image}
+                loading="lazy"
               />
             ))}
           </div>
@@ -67,6 +68,7 @@ function Section({
                 alt={image.alt}
                 style={{ aspectRatio: image.aspectRatio }}
                 className={classes.image}
+                loading="lazy"
               />
             ))}
           </div>
