@@ -41,7 +41,7 @@
   max-width: var(--container-max-width);
   margin-left: auto;
   margin-right: auto;
-  padding: 32px 48px 32px 72px;
+  padding: 32px 36px 32px 72px;
 }
 .caption,
 .description {
@@ -69,7 +69,7 @@
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  gap: 16px;
+  gap: 12px;
   grid-row-end: span 2;
 }
 .imageColumn {
@@ -77,7 +77,7 @@
   flex-direction: column;
   flex-basis: 0;
   flex-grow: 1;
-  gap: 16px;
+  gap: 12px;
   &.even {
     padding-top: 10%;
   }
