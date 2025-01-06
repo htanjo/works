@@ -6,46 +6,57 @@ interface MenuProps {
 }
 
 function Menu({ activeId }: MenuProps) {
-  const menuRef = useRef<HTMLDivElement>(null);
+  const menu = useRef<HTMLDivElement>(null);
+  const menuList = useRef<HTMLUListElement>(null);
   const activeItem = useRef<HTMLElement | null>(null);
   const [arrowPosition, setArrowPosition] = useState(0);
 
+  const getArrowPosition = () => {
+    if (activeItem.current && menuList.current) {
+      return (
+        activeItem.current.offsetLeft +
+        activeItem.current.clientWidth / 2 -
+        menuList.current.scrollLeft
+      );
+    }
+    return 0;
+  };
+
   useEffect(() => {
-    if (menuRef.current) {
-      const MenuListItems = Array.from(
-        menuRef.current.querySelectorAll(`[href^="#"]`),
+    if (menu.current) {
+      const menuListItems = Array.from(
+        menu.current.querySelectorAll(`[href^="#"]`),
       ).map((anchor) => anchor.parentElement);
-      MenuListItems.forEach((item) => item?.classList.remove(classes.active));
+      menuListItems.forEach((item) => item?.classList.remove(classes.active));
       activeItem.current =
-        menuRef.current.querySelector(`[href="#${activeId}"]`)?.parentElement ||
+        menu.current.querySelector(`[href="#${activeId}"]`)?.parentElement ||
         null;
       if (activeItem.current) {
         activeItem.current.classList.add(classes.active);
-        setArrowPosition(
-          activeItem.current.offsetLeft + activeItem.current.clientWidth / 2,
-        );
-      } else {
-        setArrowPosition(0);
       }
+      setArrowPosition(getArrowPosition());
     }
   }, [activeId]);
 
   useEffect(() => {
     const handleWindowResize = () => {
-      setArrowPosition(
-        activeItem.current
-          ? activeItem.current.offsetLeft + activeItem.current.clientWidth / 2
-          : 0,
-      );
+      setArrowPosition(getArrowPosition());
+    };
+    const handleMenuScroll = () => {
+      setArrowPosition(getArrowPosition());
     };
     window.addEventListener('resize', handleWindowResize);
-    return () => window.removeEventListener('resize', handleWindowResize);
+    menuList.current?.addEventListener('scroll', handleMenuScroll);
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+      menuList.current?.removeEventListener('scroll', handleMenuScroll);
+    };
   }, []);
 
   return (
-    <div className={classes.menu} ref={menuRef}>
+    <div className={classes.menu} ref={menu}>
       <div className={classes.menuContainer}>
-        <ul className={classes.menuList}>
+        <ul className={classes.menuList} ref={menuList}>
           <li className={classes.menuListItem}>
             <a href="#game">ゲーム</a>
           </li>

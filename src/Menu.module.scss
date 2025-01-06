@@ -71,7 +71,7 @@
 }
 .arrow {
   position: absolute;
-  bottom: -11px;
+  bottom: -12px;
   left: -8px;
   border-top: 12px solid var(--header-color);
   border-left: 8px solid transparent;
@@ -81,8 +81,5 @@
 @media screen and (max-width: 950px) {
   .menuContainer {
     padding: 0 16px;
-  }
-  .arrow {
-    display: none;
   }
 }
