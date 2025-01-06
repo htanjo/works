@@ -42,10 +42,9 @@ function Section({
       }}
     >
       <div className={classes.sectionContainer}>
-        <div className={classes.text}>
+        <div className={classes.caption}>
           <h2 className={classes.title}>{title}</h2>
           <div className={classes.info}>{info}</div>
-          <div className={classes.description}>{description}</div>
         </div>
         <div className={classes.images}>
           <div className={`${classes.imageColumn} ${classes.even}`}>
@@ -73,6 +72,7 @@ function Section({
             ))}
           </div>
         </div>
+        <div className={classes.description}>{description}</div>
       </div>
     </div>
   );
