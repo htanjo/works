@@ -27,6 +27,7 @@
   overflow-x: auto;
   white-space: nowrap;
   list-style-type: none;
+  scroll-behavior: smooth;
 }
 .menuListItem {
   a {
@@ -76,7 +77,7 @@
   border-top: 12px solid var(--header-color);
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  transition: translate 400ms;
+  transition: translate 400ms 100ms;
 }
 @media screen and (max-width: 950px) {
   .menuContainer {

@@ -33,6 +33,19 @@ function Menu({ activeId }: MenuProps) {
         null;
       if (activeItem.current) {
         activeItem.current.classList.add(classes.active);
+        if (menuList.current) {
+          if (activeItem.current.getBoundingClientRect().left < 0) {
+            menuList.current.scrollLeft = activeItem.current.offsetLeft;
+          } else if (
+            activeItem.current.getBoundingClientRect().right >
+            menu.current.scrollWidth
+          ) {
+            menuList.current.scrollLeft =
+              activeItem.current.offsetLeft +
+              activeItem.current.clientWidth -
+              menu.current.scrollWidth;
+          }
+        }
       }
       setArrowPosition(getArrowPosition());
     }
