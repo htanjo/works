@@ -9,14 +9,24 @@
   max-width: var(--container-max-width);
   margin-left: auto;
   margin-right: auto;
-  padding: 16px 36px 16px 72px;
+  padding: 20px 36px 12px 72px;
 }
 .titleText {
   margin: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  font-size: 2.4rem;
+  letter-spacing: 0.05em;
+  color: #ca427f;
+  text-shadow:
+    0 -1px 1px #000000cc,
+    0 1px 1px #ffffff44;
 }
-
 @media screen and (max-width: 950px) {
   .titleContainer {
-    padding: 16px;
+    padding: 16px 16px 12px;
+  }
+  .titleText {
+    text-align: center;
   }
 }
