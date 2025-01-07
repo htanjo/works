@@ -40,7 +40,8 @@ body {
 }
 [data-rmiz-modal-overlay='visible'] {
   background-color: #ffffff99 !important;
-  backdrop-filter: blur(64px);
+  backdrop-filter: blur(48px);
+  filter: saturate(2);
 }
 @media print {
   :root {
