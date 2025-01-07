@@ -10,7 +10,9 @@ function Header({ activeMenuId }: HeaderProps) {
     <>
       <div className={classes.title}>
         <div className={classes.titleContainer}>
-          <h1 className={classes.titleText}>htanjo's works</h1>
+          <h1 className={classes.titleText}>
+            <span>htanjo's works</span>
+          </h1>
         </div>
       </div>
       <Menu activeId={activeMenuId} />
