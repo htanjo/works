@@ -85,6 +85,8 @@
 .image {
   display: block;
   width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 4px #00000044;
 }
 @media screen and (max-width: 950px) {
   .section {
@@ -122,5 +124,8 @@
   }
   .imageColumn {
     gap: 8px;
+  }
+  .image {
+    border-radius: 4px;
   }
 }

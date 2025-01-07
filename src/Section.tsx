@@ -1,4 +1,6 @@
 import { ReactNode, useMemo } from 'react';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 import classes from './Section.module.scss';
 
 export interface Image {
@@ -49,26 +51,30 @@ function Section({
         <div className={classes.images}>
           <div className={`${classes.imageColumn} ${classes.even}`}>
             {evenImages.map((image) => (
-              <img
-                key={image.src}
-                src={image.src}
-                alt={image.alt}
-                style={{ aspectRatio: image.aspectRatio }}
-                className={classes.image}
-                loading="lazy"
-              />
+              <Zoom zoomMargin={16}>
+                <img
+                  key={image.src}
+                  src={image.src}
+                  alt={image.alt}
+                  style={{ aspectRatio: image.aspectRatio }}
+                  className={classes.image}
+                  loading="lazy"
+                />
+              </Zoom>
             ))}
           </div>
           <div className={`${classes.imageColumn} ${classes.odd}`}>
             {oddImages.map((image) => (
-              <img
-                key={image.src}
-                src={image.src}
-                alt={image.alt}
-                style={{ aspectRatio: image.aspectRatio }}
-                className={classes.image}
-                loading="lazy"
-              />
+              <Zoom zoomMargin={16}>
+                <img
+                  key={image.src}
+                  src={image.src}
+                  alt={image.alt}
+                  style={{ aspectRatio: image.aspectRatio }}
+                  className={classes.image}
+                  loading="lazy"
+                />
+              </Zoom>
             ))}
           </div>
         </div>

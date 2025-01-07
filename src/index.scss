@@ -34,6 +34,14 @@ body {
 #root {
   width: 100%;
 }
+// Override styles of react-medium-image-zoom
+[data-rmiz-btn-unzoom] {
+  display: none;
+}
+[data-rmiz-modal-overlay='visible'] {
+  background-color: #ffffff99 !important;
+  backdrop-filter: blur(64px);
+}
 @media print {
   :root {
     zoom: 75%;
