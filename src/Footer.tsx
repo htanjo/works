@@ -53,6 +53,15 @@ function Footer() {
             </a>
           </li>
           <li>
+            <a
+              href="https://www.youtube.com/@htanjo"
+              target="_blank"
+              rel="noopener"
+            >
+              YouTube
+            </a>
+          </li>
+          <li>
             <a href="https://x.com/htanjo" target="_blank" rel="noopener">
               X (Twitter)
             </a>
