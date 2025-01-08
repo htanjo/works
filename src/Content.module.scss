@@ -17,12 +17,34 @@
     max-width: var(--container-max-width);
     margin-left: auto;
     margin-right: auto;
-    padding: 0 64px 0 72px;
+    padding: 0 32px;
+    text-align: center;
     color: var(--paper-color);
     background-color: var(--header-color);
     box-shadow: 0 0 6px #00000088;
-    &:not(:first-child) {
-      break-before: page;
+    &[id='game'] {
+      color: #f29d8a;
+    }
+    &[id='mod'] {
+      color: #c0c866;
+    }
+    &[id='3dcg'] {
+      color: #e8a855;
+    }
+    &[id='painting'] {
+      color: #8dc69c;
+    }
+    &[id='animation'] {
+      color: #dac135;
+    }
+    &[id='app'] {
+      color: #7eb9c4;
+    }
+    &[id='model'] {
+      color: #ccc24e;
+    }
+    &[id='hardware'] {
+      color: #b1a5a5;
     }
   }
   .anchorTitle {
@@ -34,11 +56,17 @@
       content: '';
       display: block;
       position: absolute;
-      bottom: -11px;
-      left: 4px;
+      bottom: -12px;
+      left: 50%;
+      margin-left: -8px;
       border-top: 12px solid var(--header-color);
       border-left: 8px solid transparent;
       border-right: 8px solid transparent;
     }
+  }
+}
+@media print {
+  .content {
+    background-color: transparent;
   }
 }

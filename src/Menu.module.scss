@@ -79,9 +79,14 @@
   border-right: 8px solid transparent;
   transition: translate 400ms 100ms;
 }
-@media screen and (max-width: 950px) {
+@media (max-width: 991px) {
+  .menuContainer {
+    padding: 0 32px;
+    justify-content: center;
+  }
+}
+@media (max-width: 767px) {
   .menuContainer {
     padding: 0 16px;
-    justify-content: center;
   }
 }

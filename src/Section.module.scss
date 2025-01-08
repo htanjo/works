@@ -4,6 +4,7 @@
   margin-bottom: 16px;
   background-color: var(--paper-color);
   box-shadow: 0 0 6px #00000022;
+  break-after: page;
   &:last-child {
     margin-bottom: 0;
   }
@@ -46,7 +47,6 @@
 .caption,
 .description {
   width: 30vw;
-  min-width: 300px;
   max-width: 480px;
 }
 .title {
@@ -89,7 +89,7 @@
   border-radius: 8px;
   box-shadow: 0 0 4px #00000044;
 }
-@media screen and (max-width: 950px) {
+@media (max-width: 991px) {
   .section {
     box-shadow: 0 0 8px #00000044;
     &::before {
@@ -112,12 +112,11 @@
   .sectionContainer {
     grid-template-columns: auto;
     grid-gap: 24px;
-    padding: 58px 16px 32px;
+    padding: 58px 32px 40px;
   }
   .caption,
   .description {
     width: 100%;
-    min-width: 0;
     max-width: 100%;
   }
   .caption {
@@ -127,12 +126,33 @@
     margin-bottom: 8px;
   }
   .images {
+    gap: 12px;
+  }
+  .imageColumn {
+    gap: 12px;
+  }
+  .image {
+    border-radius: 4px;
+  }
+}
+@media (max-width: 767px) {
+  .sectionContainer {
+    padding: 58px 16px 32px;
+  }
+  .images {
     gap: 8px;
   }
   .imageColumn {
     gap: 8px;
   }
-  .image {
-    border-radius: 4px;
+}
+@media print {
+  .section {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .sectionContainer {
+    grid-gap: 36px;
+    padding: 58px 72px 32px;
   }
 }

@@ -38,7 +38,7 @@ function Section({
 
   useEffect(() => {
     const handleWindowResize = () => {
-      if (window.innerWidth <= 950) {
+      if (window.innerWidth <= 767) {
         setZoomMargin(16);
       } else {
         setZoomMargin(36);
