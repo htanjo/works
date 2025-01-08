@@ -1,4 +1,4 @@
-import { ReactNode, useMemo } from 'react';
+import { ReactNode, useEffect, useMemo, useState } from 'react';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import classes from './Section.module.scss';
@@ -34,6 +34,23 @@ function Section({
     () => images.filter((_image, index) => !!((index + 1) % 2)),
     [images],
   );
+  const [zoomMargin, setZoomMargin] = useState(36);
+
+  useEffect(() => {
+    const handleWindowResize = () => {
+      if (window.innerWidth <= 950) {
+        setZoomMargin(16);
+      } else {
+        setZoomMargin(36);
+      }
+    };
+    window.addEventListener('resize', handleWindowResize);
+    handleWindowResize();
+    return () => {
+      window.removeEventListener('resize', handleWindowResize);
+    };
+  }, []);
+
   return (
     <div
       className={classes.section}
@@ -51,7 +68,7 @@ function Section({
         <div className={classes.images}>
           <div className={`${classes.imageColumn} ${classes.even}`}>
             {evenImages.map((image) => (
-              <Zoom zoomMargin={16}>
+              <Zoom zoomMargin={zoomMargin}>
                 <img
                   key={image.src}
                   src={image.src}
@@ -65,7 +82,7 @@ function Section({
           </div>
           <div className={`${classes.imageColumn} ${classes.odd}`}>
             {oddImages.map((image) => (
-              <Zoom zoomMargin={16}>
+              <Zoom zoomMargin={zoomMargin}>
                 <img
                   key={image.src}
                   src={image.src}
