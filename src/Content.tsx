@@ -198,7 +198,7 @@ function Content({ onChangeSection }: ContentProps) {
             </p>
             <p>
               リリース時にはHot Mods
-              1位を獲得、リリース7ヶ月目の2024年末時点で1.4万ダウンロードを記録した。
+              1位を獲得、リリース8ヶ月後の2025年1月時点で1.5万ダウンロードを記録した。
             </p>
             <div>
               MOD配布ページ
@@ -250,7 +250,7 @@ function Content({ onChangeSection }: ContentProps) {
         description={
           <>
             <p>
-              PCゲーム「Witcher 3」に登場するトゥサンエリアの色調を整えるMOD。
+              PCゲーム「Witcher 3」に登場するトゥサンエリアの色味を調整するMOD。
               絵画的でやや非現実感のあるトゥサンの風景を、自然なものへと変更する。
               MODにより天候設定が書き換えられ、空や遠景のシアンが抑えられている。
             </p>
@@ -374,8 +374,8 @@ function Content({ onChangeSection }: ContentProps) {
           <>
             <p>
               3Dスカルプトによるモデリングの習作。
-              頭部から体まで、美術解剖学を参考にゼロからモデリングしている。
-              ソフトウェアはZBrushとBlenderを体験した。
+              頭部から指先まで、美術解剖学を参考にゼロからモデリングしている。
+              ソフトウェアはZBrushとBlenderを経験した。
             </p>
             <p>
               また、3Dレンダリングの上から2Dでペインティングする技法（右下の作品）など、表現力の向上を目指して制作している。
@@ -534,7 +534,7 @@ function Content({ onChangeSection }: ContentProps) {
         description={
           <>
             <p>
-              より早く、特徴を捉えて描けるように、クロッキーやスピードペンディングを練習している。
+              より素早く、特徴を捉えて描けるように、クロッキーやスピードペンディングを練習している。
               右下のデッサンはCorel Painterの木炭ブラシで描いたデジタル作品。
             </p>
             <p>
@@ -696,7 +696,7 @@ function Content({ onChangeSection }: ContentProps) {
           <>
             <p>
               家中の家電を一括管理するためのスマホアプリ。
-              公開用のアプリではなく、我が家専用に開発されたもの。
+              公開用のアプリではなく、我が家専用に開発したもの。
             </p>
             <p>
               私の家では、家電の制御方式が赤外線、HTTP、ZigBeeとそれぞれ異なり、スマート家電として扱うには別々の専用アプリが必要だった。
@@ -790,7 +790,7 @@ function Content({ onChangeSection }: ContentProps) {
         description={
           <>
             <p>
-              ゲーム「DEATH STRANDING」に登場するバイクの模型。
+              ゲーム「DEATH STRANDING」に登場するバイクのプラモデル。
               こちらは基本に忠実をコンセプトに制作した。
             </p>
             <p>
@@ -847,7 +847,7 @@ function Content({ onChangeSection }: ContentProps) {
               現在使用しているPCは、クリエイティブとゲーミング性能に特化させたもの。
             </p>
             <p>
-              処理能力と静音性を両立させるため、パーツ選定にとどまらず、電圧からファン回転数まで細かくチューニングが施してある。
+              処理能力と静音性を両立させるため、パーツ選定だけでなく、電圧からファン回転数まで細かくチューニングが施してある。
               近年巨大化したグラフィックスカードの固定や、裏配線もバッチリ。
             </p>
             <p>
