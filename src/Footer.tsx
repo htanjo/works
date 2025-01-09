@@ -1,6 +1,8 @@
 import classes from './Footer.module.scss';
 
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <div className={classes.footer}>
       <div className={classes.footerContainer}>
@@ -82,6 +84,7 @@ function Footer() {
             </li>
           </ul>
         </div>
+        <div className={classes.copyright}>&copy; {year} htanjo</div>
       </div>
     </div>
   );
