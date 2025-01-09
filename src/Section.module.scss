@@ -184,7 +184,10 @@
     box-shadow: none;
   }
   .sectionContainer {
-    grid-gap: 36px;
-    padding: 58px 72px 32px;
+    grid-gap: 24px;
+    padding: 52px 60px 24px;
+  }
+  .imageColumn {
+    transform: none !important;
   }
 }

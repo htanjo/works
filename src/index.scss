@@ -43,9 +43,9 @@ body {
   backdrop-filter: blur(36px);
   filter: saturate(1.5);
 }
-@media print {
-  :root {
-    zoom: 100%;
-    font-size: 20px;
-  }
-}
+// @media print {
+//   :root {
+//     zoom: 70%;
+//     font-size: 20px;
+//   }
+// }
