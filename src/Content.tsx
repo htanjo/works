@@ -596,7 +596,7 @@ function Content({ onChangeSection }: ContentProps) {
           {
             src: './arch-01.jpg',
             alt: 'アーチ',
-            aspectRatio: 4 / 3,
+            aspectRatio: 581 / 428,
           },
           {
             src: './arch-02.jpg',
@@ -870,7 +870,7 @@ function Content({ onChangeSection }: ContentProps) {
             light: true,
           },
           {
-            src: './pc-01.jpg',
+            src: './pc-03.jpg',
             alt: '自作PC',
             aspectRatio: 4 / 3,
             light: true,
