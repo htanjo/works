@@ -1,6 +1,7 @@
 import { ReactNode, useEffect, useMemo, useState } from 'react';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
+import { motion } from 'motion/react';
 import classes from './Section.module.scss';
 
 export interface Image {
@@ -35,18 +36,24 @@ function Section({
     () => images.filter((_image, index) => !!((index + 1) % 2)),
     [images],
   );
-  const [zoomMargin, setZoomMargin] = useState(36);
+  const [zoomMargin, setZoomMargin] = useState(
+    window.innerWidth <= 767 ? 16 : 36,
+  );
+  const [translateY, setTranslateY] = useState(
+    window.innerWidth <= 767 ? 40 : 80,
+  );
 
   useEffect(() => {
     const handleWindowResize = () => {
       if (window.innerWidth <= 767) {
         setZoomMargin(16);
+        setTranslateY(40);
       } else {
         setZoomMargin(36);
+        setTranslateY(80);
       }
     };
     window.addEventListener('resize', handleWindowResize);
-    handleWindowResize();
     return () => {
       window.removeEventListener('resize', handleWindowResize);
     };
@@ -67,7 +74,16 @@ function Section({
           <div className={classes.info}>{info}</div>
         </div>
         <div className={classes.images}>
-          <div className={`${classes.imageColumn} ${classes.even}`}>
+          <motion.div
+            className={`${classes.imageColumn} ${classes.even}`}
+            initial={{ transform: `translateY(${translateY}px)` }}
+            whileInView={{ transform: 'translateY(0)' }}
+            transition={{ duration: 0.5 }}
+            viewport={{
+              once: false,
+              margin: `1000px 0px -${translateY * 0.25}px 0px`,
+            }}
+          >
             {evenImages.map((image) => (
               <div
                 className={`${classes.imageWrapper}${image.light ? ` ${classes.light}` : ''}`}
@@ -84,8 +100,17 @@ function Section({
                 </Zoom>
               </div>
             ))}
-          </div>
-          <div className={`${classes.imageColumn} ${classes.odd}`}>
+          </motion.div>
+          <motion.div
+            className={`${classes.imageColumn} ${classes.odd}`}
+            initial={{ transform: `translateY(${translateY * 2}px)` }}
+            whileInView={{ transform: 'translateY(0)' }}
+            transition={{ duration: 0.5 }}
+            viewport={{
+              once: false,
+              margin: `1000px 0px -${translateY * 0.25}px 0px`,
+            }}
+          >
             {oddImages.map((image) => (
               <div
                 className={`${classes.imageWrapper}${image.light ? ` ${classes.light}` : ''}`}
@@ -102,7 +127,7 @@ function Section({
                 </Zoom>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
         <div className={classes.description}>{description}</div>
       </div>
