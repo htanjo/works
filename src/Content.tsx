@@ -264,11 +264,13 @@ function Content({ onChangeSection }: ContentProps) {
             src: './toussaint-natural-weather-01.jpg',
             alt: 'Toussaint Natural Weather',
             aspectRatio: 16 / 9,
+            light: true,
           },
           {
             src: './toussaint-natural-weather-02.jpg',
             alt: 'Toussaint Natural Weather',
             aspectRatio: 16 / 9,
+            light: true,
           },
         ]}
         primaryColor="#2b866f"
@@ -426,16 +428,19 @@ function Content({ onChangeSection }: ContentProps) {
             src: './interior-vr-01.jpg',
             alt: 'インテリアのVR再現',
             aspectRatio: 16 / 9,
+            light: true,
           },
           {
             src: './interior-vr-02.jpg',
             alt: 'インテリアのVR再現',
             aspectRatio: 16 / 9,
+            light: true,
           },
           {
             src: './interior-vr-03.jpg',
             alt: 'インテリアのVR再現',
             aspectRatio: 16 / 9,
+            light: true,
           },
         ]}
         primaryColor="#b34739"
@@ -543,11 +548,13 @@ function Content({ onChangeSection }: ContentProps) {
             src: './sketch-01.jpg',
             alt: 'スケッチ',
             aspectRatio: 2100 / 1438,
+            light: true,
           },
           {
             src: './sketch-02.jpg',
             alt: 'スケッチ',
             aspectRatio: 800 / 1165,
+            light: true,
           },
           {
             src: './sketch-03.jpg',
@@ -595,6 +602,7 @@ function Content({ onChangeSection }: ContentProps) {
             src: './arch-02.jpg',
             alt: 'アーチ',
             aspectRatio: 4 / 3,
+            light: true,
           },
         ]}
         primaryColor="#197593"
@@ -716,6 +724,7 @@ function Content({ onChangeSection }: ContentProps) {
             src: './smart-controller-01.jpg',
             alt: 'Smart Controller',
             aspectRatio: 3 / 4,
+            light: true,
           },
         ]}
         primaryColor="#4364c4"
@@ -795,21 +804,25 @@ function Content({ onChangeSection }: ContentProps) {
             src: './reverse-trike-01.jpg',
             alt: 'リバース・トライク',
             aspectRatio: 16 / 9,
+            light: true,
           },
           {
             src: './reverse-trike-02.jpg',
             alt: 'リバース・トライク',
             aspectRatio: 16 / 9,
+            light: true,
           },
           {
             src: './reverse-trike-03.jpg',
             alt: 'リバース・トライク',
             aspectRatio: 16 / 9,
+            light: true,
           },
           {
             src: './reverse-trike-04.jpg',
             alt: 'リバース・トライク',
             aspectRatio: 16 / 9,
+            light: true,
           },
         ]}
         primaryColor="#5c862b"
@@ -848,16 +861,19 @@ function Content({ onChangeSection }: ContentProps) {
             src: './pc-01.jpg',
             alt: '自作PC',
             aspectRatio: 4 / 3,
+            light: true,
           },
           {
             src: './pc-02.jpg',
             alt: '自作PC',
             aspectRatio: 4 / 5,
+            light: true,
           },
           {
             src: './pc-01.jpg',
             alt: '自作PC',
             aspectRatio: 4 / 3,
+            light: true,
           },
         ]}
         primaryColor="#7857a0"

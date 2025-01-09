@@ -7,6 +7,7 @@ export interface Image {
   src: string;
   alt: string;
   aspectRatio: number;
+  light?: boolean;
 }
 
 interface SectionProps {
@@ -68,30 +69,38 @@ function Section({
         <div className={classes.images}>
           <div className={`${classes.imageColumn} ${classes.even}`}>
             {evenImages.map((image) => (
-              <Zoom zoomMargin={zoomMargin}>
-                <img
-                  key={image.src}
-                  src={image.src}
-                  alt={image.alt}
-                  style={{ aspectRatio: image.aspectRatio }}
-                  className={classes.image}
-                  loading="lazy"
-                />
-              </Zoom>
+              <div
+                className={`${classes.imageWrapper}${image.light ? ` ${classes.light}` : ''}`}
+              >
+                <Zoom zoomMargin={zoomMargin}>
+                  <img
+                    key={image.src}
+                    src={image.src}
+                    alt={image.alt}
+                    style={{ aspectRatio: image.aspectRatio }}
+                    className={classes.image}
+                    loading="lazy"
+                  />
+                </Zoom>
+              </div>
             ))}
           </div>
           <div className={`${classes.imageColumn} ${classes.odd}`}>
             {oddImages.map((image) => (
-              <Zoom zoomMargin={zoomMargin}>
-                <img
-                  key={image.src}
-                  src={image.src}
-                  alt={image.alt}
-                  style={{ aspectRatio: image.aspectRatio }}
-                  className={classes.image}
-                  loading="lazy"
-                />
-              </Zoom>
+              <div
+                className={`${classes.imageWrapper}${image.light ? ` ${classes.light}` : ''}`}
+              >
+                <Zoom zoomMargin={zoomMargin}>
+                  <img
+                    key={image.src}
+                    src={image.src}
+                    alt={image.alt}
+                    style={{ aspectRatio: image.aspectRatio }}
+                    className={classes.image}
+                    loading="lazy"
+                  />
+                </Zoom>
+              </div>
             ))}
           </div>
         </div>
