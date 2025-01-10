@@ -1,6 +1,7 @@
 .section {
   position: relative;
   margin-bottom: 16px;
+  overflow: hidden;
   background-color: var(--paper-color);
   box-shadow: 0 0 6px #00000022;
   break-after: page;
