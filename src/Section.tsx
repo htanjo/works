@@ -8,7 +8,6 @@ export interface Image {
   src: string;
   alt: string;
   aspectRatio: number;
-  light?: boolean;
 }
 
 interface SectionProps {
@@ -85,20 +84,16 @@ function Section({
             }}
           >
             {evenImages.map((image) => (
-              <div
-                className={`${classes.imageWrapper}${image.light ? ` ${classes.light}` : ''}`}
-              >
-                <Zoom zoomMargin={zoomMargin}>
-                  <img
-                    key={image.src}
-                    src={image.src}
-                    alt={image.alt}
-                    style={{ aspectRatio: image.aspectRatio }}
-                    className={classes.image}
-                    loading="lazy"
-                  />
-                </Zoom>
-              </div>
+              <Zoom zoomMargin={zoomMargin}>
+                <img
+                  key={image.src}
+                  src={image.src}
+                  alt={image.alt}
+                  style={{ aspectRatio: image.aspectRatio }}
+                  className={classes.image}
+                  loading="lazy"
+                />
+              </Zoom>
             ))}
           </motion.div>
           <motion.div
@@ -112,20 +107,16 @@ function Section({
             }}
           >
             {oddImages.map((image) => (
-              <div
-                className={`${classes.imageWrapper}${image.light ? ` ${classes.light}` : ''}`}
-              >
-                <Zoom zoomMargin={zoomMargin}>
-                  <img
-                    key={image.src}
-                    src={image.src}
-                    alt={image.alt}
-                    style={{ aspectRatio: image.aspectRatio }}
-                    className={classes.image}
-                    loading="lazy"
-                  />
-                </Zoom>
-              </div>
+              <Zoom zoomMargin={zoomMargin}>
+                <img
+                  key={image.src}
+                  src={image.src}
+                  alt={image.alt}
+                  style={{ aspectRatio: image.aspectRatio }}
+                  className={classes.image}
+                  loading="lazy"
+                />
+              </Zoom>
             ))}
           </motion.div>
         </div>
