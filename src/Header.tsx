@@ -11,7 +11,9 @@ function Header({ activeMenuId }: HeaderProps) {
       <div className={classes.title}>
         <div className={classes.titleContainer}>
           <h1 className={classes.titleText}>
-            <span>htanjo's works</span>
+            <a href="https://htanjo.github.io/works/">
+              <span>htanjo's works</span>
+            </a>
           </h1>
         </div>
       </div>
