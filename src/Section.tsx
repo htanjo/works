@@ -76,7 +76,7 @@ function Section({
           <motion.div
             className={`${classes.imageColumn} ${classes.even}`}
             initial={{ transform: `translateY(${translateY}px)` }}
-            whileInView={{ transform: 'translateY(0)' }}
+            whileInView={{ transform: 'translateY(0px)' }}
             transition={{ duration: 0.5 }}
             viewport={{
               once: false,
@@ -99,7 +99,7 @@ function Section({
           <motion.div
             className={`${classes.imageColumn} ${classes.odd}`}
             initial={{ transform: `translateY(${translateY * 2}px)` }}
-            whileInView={{ transform: 'translateY(0)' }}
+            whileInView={{ transform: 'translateY(0px)' }}
             transition={{ duration: 0.5 }}
             viewport={{
               once: false,
