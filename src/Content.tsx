@@ -372,7 +372,7 @@ function Content({ onChangeSection }: ContentProps) {
           <>
             <p>
               3Dスカルプトによるモデリングの習作。
-              頭部から指先まで、美術解剖学を参考にゼロからモデリングしている。
+              頭部から指先まで、美術解剖学を学びながらゼロからモデリングしている。
               ソフトウェアはZBrushとBlenderを経験した。
             </p>
             <p>
