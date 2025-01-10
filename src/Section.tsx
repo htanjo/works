@@ -84,9 +84,8 @@ function Section({
             }}
           >
             {evenImages.map((image) => (
-              <Zoom zoomMargin={zoomMargin}>
+              <Zoom key={image.src} zoomMargin={zoomMargin}>
                 <img
-                  key={image.src}
                   src={image.src}
                   alt={image.alt}
                   style={{ aspectRatio: image.aspectRatio }}
@@ -107,9 +106,8 @@ function Section({
             }}
           >
             {oddImages.map((image) => (
-              <Zoom zoomMargin={zoomMargin}>
+              <Zoom key={image.src} zoomMargin={zoomMargin}>
                 <img
-                  key={image.src}
                   src={image.src}
                   alt={image.alt}
                   style={{ aspectRatio: image.aspectRatio }}
