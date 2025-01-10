@@ -8,6 +8,7 @@ export interface Image {
   src: string;
   alt: string;
   aspectRatio: number;
+  disableLazyLoad?: boolean;
 }
 
 interface SectionProps {
@@ -90,7 +91,7 @@ function Section({
                   alt={image.alt}
                   style={{ aspectRatio: image.aspectRatio }}
                   className={classes.image}
-                  loading="lazy"
+                  loading={image.disableLazyLoad ? 'eager' : 'lazy'}
                 />
               </Zoom>
             ))}
@@ -112,7 +113,7 @@ function Section({
                   alt={image.alt}
                   style={{ aspectRatio: image.aspectRatio }}
                   className={classes.image}
-                  loading="lazy"
+                  loading={image.disableLazyLoad ? 'eager' : 'lazy'}
                 />
               </Zoom>
             ))}

@@ -89,26 +89,31 @@ function Content({ onChangeSection }: ContentProps) {
             src: './images/9th_floor_01.jpg',
             alt: 'The 9th Floor',
             aspectRatio: 16 / 9,
+            disableLazyLoad: true,
           },
           {
             src: './images/9th_floor_02.jpg',
             alt: 'The 9th Floor',
             aspectRatio: 16 / 9,
+            disableLazyLoad: true,
           },
           {
             src: './images/9th_floor_03.jpg',
             alt: 'The 9th Floor',
             aspectRatio: 16 / 9,
+            disableLazyLoad: true,
           },
           {
             src: './images/9th_floor_04.jpg',
             alt: 'The 9th Floor',
             aspectRatio: 16 / 9,
+            disableLazyLoad: true,
           },
           {
             src: './images/9th_floor_05.jpg',
             alt: 'The 9th Floor',
             aspectRatio: 16 / 9,
+            disableLazyLoad: true,
           },
         ]}
         primaryColor="#a43768"
