@@ -13,6 +13,7 @@
 }
 .menuContainer {
   display: flex;
+  justify-content: space-between;
   position: relative;
   max-width: var(--container-max-width);
   margin-left: auto;
@@ -22,6 +23,7 @@
 .menuList {
   display: flex;
   flex-direction: row;
+  align-items: flex-end;
   margin: 0 -12px;
   padding: 0;
   overflow-x: auto;
@@ -30,10 +32,14 @@
   scroll-behavior: smooth;
 }
 .menuListItem {
-  a {
+  a,
+  button {
     display: inline-block;
     padding: 16px 12px;
+    border: none;
     color: #b1a5a5;
+    background-color: transparent;
+    cursor: pointer;
     transition: color 300ms;
     &:hover,
     &:focus {
@@ -65,9 +71,16 @@
     &[href='#hardware'] {
       color: #a8b1e5;
     }
-    // &:hover {
-    //   color: var(--paper-color);
-    // }
+  }
+  &.active button {
+    color: #f29d8a;
+  }
+  &:not(.active) button {
+    color: #867c7c;
+    &:hover,
+    &:focus {
+      color: var(--paper-color);
+    }
   }
 }
 .arrow {
@@ -83,6 +96,9 @@
   .menuContainer {
     padding: 0 32px;
     justify-content: center;
+  }
+  .languageList {
+    display: none;
   }
 }
 @media (max-width: 767px) {

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { MouseEvent, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import classes from './Menu.module.scss';
 
@@ -7,7 +7,7 @@ interface MenuProps {
 }
 
 function Menu({ activeId }: MenuProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const menu = useRef<HTMLDivElement>(null);
   const menuList = useRef<HTMLUListElement>(null);
   const activeItem = useRef<HTMLElement | null>(null);
@@ -95,6 +95,38 @@ function Menu({ activeId }: MenuProps) {
           </li>
           <li className={classes.menuListItem}>
             <a href="#hardware">{t('ハードウェア')}</a>
+          </li>
+        </ul>
+        <ul className={`${classes.menuList} ${classes.languageList}`}>
+          <li
+            className={`${classes.menuListItem}${
+              i18n.language === 'ja' ? ` ${classes.active}` : ''
+            }`}
+          >
+            <button
+              type="button"
+              onClick={(event: MouseEvent<HTMLButtonElement>) => {
+                i18n.changeLanguage('ja');
+                event.currentTarget.blur();
+              }}
+            >
+              日本語
+            </button>
+          </li>
+          <li
+            className={`${classes.menuListItem}${
+              i18n.language === 'en' ? ` ${classes.active}` : ''
+            }`}
+          >
+            <button
+              type="button"
+              onClick={(event: MouseEvent<HTMLButtonElement>) => {
+                i18n.changeLanguage('en');
+                event.currentTarget.blur();
+              }}
+            >
+              English
+            </button>
           </li>
         </ul>
         {activeItem.current && (
