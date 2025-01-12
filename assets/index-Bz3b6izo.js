@@ -390,7 +390,7 @@ Error generating stack: `+f.message+`
       <p>
         The model was fully painted based on actual in-game screenshots, and attention was given to details such as removing seams between parts and smoothing out decal edges.
         Weathering will be added later, and for now, it has been finished with a matte coating.
-      </p>`},pc:{title:"Custom-Built PC",info:"<strong>2005 - Present</strong><br />Windows / Linuxパソコン",description:`<p>
+      </p>`},pc:{title:"Custom-Built PC",info:"<strong>2005 - Present</strong><br />Windows / Linux PC",description:`<p>
         I've been building custom PCs since my student days.
         The current PC is designed with a focus on both creative and gaming performance.
       </p>
