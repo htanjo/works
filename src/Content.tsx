@@ -35,7 +35,7 @@ function Content({ onChangeSection }: ContentProps) {
   return (
     <div className={classes.content} ref={contentRef}>
       <div id="game" className={classes.anchor}>
-        <div className={classes.anchorTitle}>ゲーム</div>
+        <div className={classes.anchorTitle}>{t('ゲーム')}</div>
       </div>
       <Section
         title={t('9thFloor.title')}
@@ -145,7 +145,7 @@ function Content({ onChangeSection }: ContentProps) {
         secondaryColor="#f29d8a"
       />
       <div id="mod" className={classes.anchor}>
-        <div className={classes.anchorTitle}>MOD</div>
+        <div className={classes.anchorTitle}>{t('MOD')}</div>
       </div>
       <Section
         title={t('emotionalVision.title')}
@@ -211,7 +211,7 @@ function Content({ onChangeSection }: ContentProps) {
         secondaryColor="#c0c866"
       />
       <div id="3dcg" className={classes.anchor}>
-        <div className={classes.anchorTitle}>3DCG</div>
+        <div className={classes.anchorTitle}>{t('3DCG')}</div>
       </div>
       <Section
         title={t('dran.title')}
@@ -324,7 +324,7 @@ function Content({ onChangeSection }: ContentProps) {
         secondaryColor="#e8a855"
       />
       <div id="painting" className={classes.anchor}>
-        <div className={classes.anchorTitle}>絵画</div>
+        <div className={classes.anchorTitle}>{t('絵画')}</div>
       </div>
       <Section
         title={t('fanart.title')}
@@ -433,7 +433,7 @@ function Content({ onChangeSection }: ContentProps) {
         secondaryColor="#8dc69c"
       />
       <div id="animation" className={classes.anchor}>
-        <div className={classes.anchorTitle}>アニメーション</div>
+        <div className={classes.anchorTitle}>{t('アニメーション')}</div>
       </div>
       <Section
         title={t('kumamon.title')}
@@ -489,7 +489,7 @@ function Content({ onChangeSection }: ContentProps) {
         secondaryColor="#dac135"
       />
       <div id="app" className={classes.anchor}>
-        <div className={classes.anchorTitle}>アプリ</div>
+        <div className={classes.anchorTitle}>{t('アプリ')}</div>
       </div>
       <Section
         title={t('smartController.title')}
@@ -521,7 +521,7 @@ function Content({ onChangeSection }: ContentProps) {
         secondaryColor="#7eb9c4"
       />
       <div id="model" className={classes.anchor}>
-        <div className={classes.anchorTitle}>模型</div>
+        <div className={classes.anchorTitle}>{t('模型')}</div>
       </div>
       <Section
         title={t('tiger1.title')}
@@ -582,7 +582,7 @@ function Content({ onChangeSection }: ContentProps) {
         secondaryColor="#ccc24e"
       />
       <div id="hardware" className={classes.anchor}>
-        <div className={classes.anchorTitle}>ハードウェア</div>
+        <div className={classes.anchorTitle}>{t('ハードウェア')}</div>
       </div>
       <Section
         title={t('pc.title')}
