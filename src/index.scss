@@ -3,7 +3,8 @@
   --header-color: #2b2927;
   --paper-color: #f1efed;
   --background-color: #e4e0dc;
-  font-family: Roboto, sans-serif;
+  // font-family: Roboto, sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -30,6 +31,10 @@ a {
 }
 a:hover {
   color: #236e7d;
+}
+button {
+  font-size: 1em;
+  font-family: inherit;
 }
 strong {
   font-weight: 600;
