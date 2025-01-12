@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { Trans, useTranslation } from 'react-i18next';
 import Section from './Section';
 import classes from './Content.module.scss';
 
@@ -7,6 +8,7 @@ interface ContentProps {
 }
 
 function Content({ onChangeSection }: ContentProps) {
+  const { t } = useTranslation();
   const contentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -36,82 +38,61 @@ function Content({ onChangeSection }: ContentProps) {
         <div className={classes.anchorTitle}>ゲーム</div>
       </div>
       <Section
-        title="The 9th Floor"
-        info={
-          <>
-            2024年～現在
-            <br />
-            WebGLゲーム: Blender / Babylon.js / React / TypeScript
-          </>
-        }
+        title={t('9thFloor.title')}
+        info={<Trans i18nKey="9thFloor.info" />}
         description={
-          <>
-            <p>
-              現在開発中の「8番出口」ライクな探索ゲーム。
-              異変を探しながら、不思議な洋館からの脱出を目指す。
-              Webブラウザ上で動作する3Dコンテンツで、上下スクロールを主体としたシンプルな操作性が特徴。
-            </p>
-            <p>
-              現在は技術デモ版として公開している。
-              PCだけでなくモバイルからもアクセスが可能。
-              環境に合わせて最適なレンダリングを行うよう構成した。
-            </p>
-            <p>
-              既存のアセットは極力使わず、モデリングからマテリアル作成、プログラミングまで、スクラッチで制作した。
-              箱庭ゲームであることを活かし、PBR（物理ベースレンダリング）にライトマップベイクを組み合わせることで、PS5に迫るほどのビジュアルを実現している。
-            </p>
-            <div>
-              作品ページ（技術デモ版）
-              <br />
-              <a
-                href="https://htanjo.github.io/9th-floor/"
-                target="_blank"
-                rel="noopener"
-              >
-                https://htanjo.github.io/9th-floor/
-              </a>
-            </div>
-            <div>
-              リポジトリ
-              <br />
-              <a
-                href="https://github.com/htanjo/9th-floor/"
-                target="_blank"
-                rel="noopener"
-              >
-                https://github.com/htanjo/9th-floor/
-              </a>
-            </div>
-          </>
+          <Trans
+            i18nKey="9thFloor.description"
+            components={{
+              link1: (
+                <a
+                  href="https://htanjo.github.io/9th-floor/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://htanjo.github.io/9th-floor/
+                </a>
+              ),
+              link2: (
+                <a
+                  href="https://github.com/htanjo/9th-floor/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://github.com/htanjo/9th-floor/
+                </a>
+              ),
+            }}
+          />
         }
         images={[
           {
             src: './images/9th_floor_01.jpg',
-            alt: 'The 9th Floor',
+            alt: t('9thFloor.title'),
             aspectRatio: 16 / 9,
             disableLazyLoad: true,
           },
           {
             src: './images/9th_floor_02.jpg',
-            alt: 'The 9th Floor',
+            alt: t('9thFloor.title'),
             aspectRatio: 16 / 9,
             disableLazyLoad: true,
           },
           {
             src: './images/9th_floor_03.jpg',
-            alt: 'The 9th Floor',
+            alt: t('9thFloor.title'),
             aspectRatio: 16 / 9,
             disableLazyLoad: true,
           },
           {
             src: './images/9th_floor_04.jpg',
-            alt: 'The 9th Floor',
+            alt: t('9thFloor.title'),
             aspectRatio: 16 / 9,
             disableLazyLoad: true,
           },
           {
             src: './images/9th_floor_05.jpg',
-            alt: 'The 9th Floor',
+            alt: t('9thFloor.title'),
             aspectRatio: 16 / 9,
             disableLazyLoad: true,
           },
@@ -120,58 +101,43 @@ function Content({ onChangeSection }: ContentProps) {
         secondaryColor="#f29d8a"
       />
       <Section
-        title="PV3D Racing"
-        info={
-          <>
-            2008～2009年
-            <br />
-            Flashゲーム: LightWave / Papervision3D / ActionScript
-          </>
-        }
+        title={t('pv3dRacing.title')}
+        info={<Trans i18nKey="pv3dRacing.info" />}
         description={
-          <>
-            <p>
-              Webブラウザ上で動作する（した）Flashベースの3Dレーシングゲーム。
-              大学の卒業制作でもある。
-              タイムアタックや車体のカスタマイズ、リプレイ機能を搭載。
-              車の挙動も自らプログラミングした。
-            </p>
-            <p>
-              当時の技術は処理能力がとても低く、サーキットを丸ごとレンダリングすることは難しかった。
-              そこでレイヤー合成による疑似LODや一部2D描画を駆使して、広大なフィールドを再現した。
-            </p>
-            <div>
-              体験版の紹介動画
-              <br />
-              <a
-                href="https://www.youtube.com/watch?v=_WSd-cR0c5Y"
-                target="_blank"
-                rel="noopener"
-              >
-                https://www.youtube.com/watch?v=_WSd-cR0c5Y
-              </a>
-            </div>
-          </>
+          <Trans
+            i18nKey="pv3dRacing.description"
+            components={{
+              link1: (
+                <a
+                  href="https://www.youtube.com/watch?v=_WSd-cR0c5Y"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://www.youtube.com/watch?v=_WSd-cR0c5Y
+                </a>
+              ),
+            }}
+          />
         }
         images={[
           {
             src: './images/pv3d_racing_01.jpg',
-            alt: 'PV3D Racing',
+            alt: t('pv3dRacing.title'),
             aspectRatio: 4 / 3,
           },
           {
             src: './images/pv3d_racing_02.jpg',
-            alt: 'PV3D Racing',
+            alt: t('pv3dRacing.title'),
             aspectRatio: 4 / 3,
           },
           {
             src: './images/pv3d_racing_03.jpg',
-            alt: 'PV3D Racing',
+            alt: t('pv3dRacing.title'),
             aspectRatio: 4 / 3,
           },
           {
             src: './images/pv3d_racing_04.jpg',
-            alt: 'PV3D Racing',
+            alt: t('pv3dRacing.title'),
             aspectRatio: 4 / 3,
           },
         ]}
@@ -182,61 +148,43 @@ function Content({ onChangeSection }: ContentProps) {
         <div className={classes.anchorTitle}>MOD</div>
       </div>
       <Section
-        title="Emotional Vision 2077"
-        info={
-          <>
-            2024年
-            <br />
-            グラフィックスMOD: DaVinci Resolve / Photoshop / WolvenKit
-          </>
-        }
+        title={t('emotionalVision.title')}
+        info={<Trans i18nKey="emotionalVision.info" />}
         description={
-          <>
-            <p>
-              PCゲーム「Cyberpunk 2077」の画質を改善するMOD。
-              ゲーム内のLUT（カラールックアップテーブル）を置き換えることで、白飛びを防ぎ、さらにオリジナルの状態よりも色の再現性を高める。
-            </p>
-            <p>
-              スクリーンショットでは僅かな違いに見えるが、実際にプレイしてみるとその差は歴然。
-              ゲーム本来の良さを残しながら、さらに表現力豊かな色彩が得られるとして、海外のMODコミュニティNexus
-              Modsで高く評価された。
-            </p>
-            <p>
-              リリース時にはHot Mods
-              1位を獲得、リリース8ヶ月後の2025年1月時点で1.5万ダウンロードを記録した。
-            </p>
-            <div>
-              MOD配布ページ
-              <br />
-              <a
-                href="https://www.nexusmods.com/cyberpunk2077/mods/14467"
-                target="_blank"
-                rel="noopener"
-              >
-                https://www.nexusmods.com/cyberpunk2077/mods/14467
-              </a>
-            </div>
-          </>
+          <Trans
+            i18nKey="emotionalVision.description"
+            components={{
+              link1: (
+                <a
+                  href="https://www.nexusmods.com/cyberpunk2077/mods/14467"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://www.nexusmods.com/cyberpunk2077/mods/14467
+                </a>
+              ),
+            }}
+          />
         }
         images={[
           {
             src: './images/emotional_vision_01.jpg',
-            alt: 'Emotional Vision 2077',
+            alt: t('emotionalVision.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/emotional_vision_02.jpg',
-            alt: 'Emotional Vision 2077',
+            alt: t('emotionalVision.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/emotional_vision_03.jpg',
-            alt: 'Emotional Vision 2077',
+            alt: t('emotionalVision.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/emotional_vision_04.jpg',
-            alt: 'Emotional Vision 2077',
+            alt: t('emotionalVision.title'),
             aspectRatio: 16 / 9,
           },
         ]}
@@ -244,35 +192,18 @@ function Content({ onChangeSection }: ContentProps) {
         secondaryColor="#c0c866"
       />
       <Section
-        title="Toussaint Natural Weather"
-        info={
-          <>
-            2017年
-            <br />
-            グラフィックスMOD: MODkit / W3Edit
-          </>
-        }
-        description={
-          <>
-            <p>
-              PCゲーム「Witcher 3」に登場するトゥサンエリアの色味を調整するMOD。
-              絵画的でやや非現実感のあるトゥサンの風景を、自然なものへと変更する。
-              MODにより天候設定が書き換えられ、空や遠景のシアンが抑えられている。
-            </p>
-            <p>
-              しかし残念ながら、ゲーム本体の最新パッチにより互換性がなくなり、このMODは一般公開しなかった。
-            </p>
-          </>
-        }
+        title={t('toussaintNaturalWeather.title')}
+        info={<Trans i18nKey="toussaintNaturalWeather.info" />}
+        description={<Trans i18nKey="toussaintNaturalWeather.description" />}
         images={[
           {
             src: './images/toussaint_natural_weather_01.jpg',
-            alt: 'Toussaint Natural Weather',
+            alt: t('toussaintNaturalWeather.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/toussaint_natural_weather_02.jpg',
-            alt: 'Toussaint Natural Weather',
+            alt: t('toussaintNaturalWeather.title'),
             aspectRatio: 16 / 9,
           },
         ]}
@@ -283,81 +214,61 @@ function Content({ onChangeSection }: ContentProps) {
         <div className={classes.anchorTitle}>3DCG</div>
       </div>
       <Section
-        title="変形！黄金剣士ドラン！"
-        info={
-          <>
-            2024年
-            <br />
-            WebGLアニメーション: Blender / Babylon.js / React / TypeScript
-          </>
-        }
+        title={t('dran.title')}
+        info={<Trans i18nKey="dran.info" />}
         description={
-          <>
-            <p>
-              アニメ「黄金勇者ゴルドラン」を題材にしたインタラクティブな3D
-              Webアニメーション。
-              ページをスクロールしていくと車からロボットへと変形する。
-              <br />
-              自動再生機能も実装した。普通の動画との違いは、マウスやデバイスの動きに合わせて視点を動かせること。
-              好きなアングルで変形の様子を眺めることができる。
-            </p>
-            <p>
-              またVRモードもサポートし、対応スマホやVRヘッドセットでアクセスすると、実寸大のロボット変形が間近で楽しめる。
-            </p>
-            <div>
-              作品ページ
-              <br />
-              <a
-                href="https://htanjo.github.io/goldran/"
-                target="_blank"
-                rel="noopener"
-              >
-                https://htanjo.github.io/goldran/
-              </a>
-            </div>
-            <div>
-              プロモーション動画
-              <br />
-              <a
-                href="https://www.youtube.com/watch?v=-gET1vW6Szk"
-                target="_blank"
-                rel="noopener"
-              >
-                https://www.youtube.com/watch?v=-gET1vW6Szk
-              </a>
-            </div>
-            <div>
-              技術解説
-              <br />
-              <a
-                href="https://qiita.com/htanjo/items/fbb5eeab8e66b3dcb78c"
-                target="_blank"
-                rel="noopener"
-              >
-                https://qiita.com/htanjo/items/fbb5eeab8e66b3dcb78c
-              </a>
-            </div>
-          </>
+          <Trans
+            i18nKey="dran.description"
+            components={{
+              link1: (
+                <a
+                  href="https://htanjo.github.io/goldran/"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://htanjo.github.io/goldran/
+                </a>
+              ),
+              link2: (
+                <a
+                  href="https://www.youtube.com/watch?v=-gET1vW6Szk"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://www.youtube.com/watch?v=-gET1vW6Szk
+                </a>
+              ),
+              link3: (
+                <a
+                  href="https://qiita.com/htanjo/items/fbb5eeab8e66b3dcb78c"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://qiita.com/htanjo/items/fbb5eeab8e66b3dcb78c
+                </a>
+              ),
+            }}
+          />
         }
         images={[
           {
             src: './images/dran_01.jpg',
-            alt: '変形！黄金剣士ドラン！',
+            alt: t('dra.title'),
             aspectRatio: 1 / 1,
           },
           {
             src: './images/dran_02.jpg',
-            alt: '変形！黄金剣士ドラン！',
+            alt: t('dra.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/dran_03.jpg',
-            alt: '変形！黄金剣士ドラン！',
+            alt: t('dra.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/dran_04.jpg',
-            alt: '変形！黄金剣士ドラン！',
+            alt: t('dra.title'),
             aspectRatio: 16 / 10,
           },
         ]}
@@ -365,40 +276,23 @@ function Content({ onChangeSection }: ContentProps) {
         secondaryColor="#e8a855"
       />
       <Section
-        title="3Dスカルプト"
-        info={
-          <>
-            2022年～現在
-            <br />
-            Blender / ZBrush / Corel Painter
-          </>
-        }
-        description={
-          <>
-            <p>
-              3Dスカルプトによるモデリングの習作。
-              頭部から指先まで、美術解剖学を学びながらゼロからモデリングしている。
-              ソフトウェアはZBrushとBlenderを経験した。
-            </p>
-            <p>
-              また、3Dレンダリングの上から2Dでペインティングする技法（右下の作品）など、表現力の向上を目指して制作している。
-            </p>
-          </>
-        }
+        title={t('sculpt.title')}
+        info={<Trans i18nKey="sculpt.info" />}
+        description={<Trans i18nKey="sculpt.description" />}
         images={[
           {
             src: './images/sculpt_01.jpg',
-            alt: '3Dスカルプト',
+            alt: t('sculpt.title'),
             aspectRatio: 935 / 772,
           },
           {
             src: './images/sculpt_02.jpg',
-            alt: '3Dスカルプト',
+            alt: t('sculpt.title'),
             aspectRatio: 3 / 4,
           },
           {
             src: './images/sculpt_03.jpg',
-            alt: '3Dスカルプト',
+            alt: t('sculpt.title'),
             aspectRatio: 1 / 1,
           },
         ]}
@@ -406,40 +300,23 @@ function Content({ onChangeSection }: ContentProps) {
         secondaryColor="#e8a855"
       />
       <Section
-        title="インテリアのVR再現"
-        info={
-          <>
-            2018年
-            <br />
-            SketchUp / Unity / Photoshop
-          </>
-        }
-        description={
-          <>
-            <p>
-              新居のインテリアを検討するにあたり、部屋全体を3Dでモデリングした。
-              モデルはUnityにインポートしてVR空間へと落とし込み、実際に歩き回りながら家具の配置を吟味した。
-            </p>
-            <p>
-              一方で配色については、Photoshopを使い複数のカラーバリエーションを作成、家具選びの参考とした。
-              向かって左側の画像が、実際に採用となったもの。
-            </p>
-          </>
-        }
+        title={t('interior.title')}
+        info={<Trans i18nKey="interior.info" />}
+        description={<Trans i18nKey="interior.description" />}
         images={[
           {
             src: './images/interior_vr_01.jpg',
-            alt: 'インテリアのVR再現',
+            alt: t('interior.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/interior_vr_02.jpg',
-            alt: 'インテリアのVR再現',
+            alt: t('interior.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/interior_vr_03.jpg',
-            alt: 'インテリアのVR再現',
+            alt: t('interior.title'),
             aspectRatio: 16 / 9,
           },
         ]}
@@ -450,72 +327,57 @@ function Content({ onChangeSection }: ContentProps) {
         <div className={classes.anchorTitle}>絵画</div>
       </div>
       <Section
-        title="ファンアート"
-        info={
-          <>
-            2011年～現在
-            <br />
-            デジタルペインティング: Corel Painter / Photoshop
-          </>
-        }
+        title={t('fanart.title')}
+        info={<Trans i18nKey="fanart.info" />}
         description={
-          <>
-            <p>
-              ゲームキャラクターを中心に、さまざまなファンアートを制作。
-              作品はPixivやDeviantArtなどのアートコミュニティサイトに投稿している。
-            </p>
-            <p>
-              特に海外での評判が良く、DeviantArtではこれまでDaily
-              Deviations（サイトの全投稿作品の中から推薦で与えられる賞）を2度獲得した。
-            </p>
-            <div>
-              Pixiv
-              <br />
-              <a
-                href="https://www.pixiv.net/users/3063376"
-                target="_blank"
-                rel="noopener"
-              >
-                https://www.pixiv.net/users/3063376
-              </a>
-            </div>
-            <div>
-              DeviantArt
-              <br />
-              <a
-                href="https://www.deviantart.com/htanjo/gallery/all"
-                target="_blank"
-                rel="noopener"
-              >
-                https://www.deviantart.com/htanjo/gallery/all
-              </a>
-            </div>
-          </>
+          <Trans
+            i18nKey="fanart.description"
+            components={{
+              link1: (
+                <a
+                  href="https://www.pixiv.net/users/3063376"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://www.pixiv.net/users/3063376
+                </a>
+              ),
+              link2: (
+                <a
+                  href="https://www.deviantart.com/htanjo/gallery/all"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://www.deviantart.com/htanjo/gallery/all
+                </a>
+              ),
+            }}
+          />
         }
         images={[
           {
             src: './images/fanart_01.jpg',
-            alt: 'ファンアート',
+            alt: t('fanart.title'),
             aspectRatio: 4 / 3,
           },
           {
             src: './images/fanart_02.jpg',
-            alt: 'ファンアート',
+            alt: t('fanart.title'),
             aspectRatio: 3 / 4,
           },
           {
             src: './images/fanart_03.jpg',
-            alt: 'ファンアート',
+            alt: t('fanart.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/fanart_04.jpg',
-            alt: 'ファンアート',
+            alt: t('fanart.title'),
             aspectRatio: 64 / 27,
           },
           {
             src: './images/fanart_05.jpg',
-            alt: 'ファンアート',
+            alt: t('fanart.title'),
             aspectRatio: 24 / 13,
           },
         ]}
@@ -523,45 +385,28 @@ function Content({ onChangeSection }: ContentProps) {
         secondaryColor="#8dc69c"
       />
       <Section
-        title="スケッチ"
-        info={
-          <>
-            2012年～現在
-            <br />
-            シャープペン / Corel Painter
-          </>
-        }
-        description={
-          <>
-            <p>
-              より素早く、特徴を捉えて描けるように、クロッキーやスピードペンディングを練習している。
-              右下のデッサンはCorel Painterの木炭ブラシで描いたデジタル作品。
-            </p>
-            <p>
-              各作品とも数十分から数時間で制作した。
-              その一部はPixivやDeviantArt、X（Twitter）で公開している。
-            </p>
-          </>
-        }
+        title={t('sketch.title')}
+        info={<Trans i18nKey="sketch.info" />}
+        description={<Trans i18nKey="sketch.description" />}
         images={[
           {
             src: './images/sketch_01.jpg',
-            alt: 'スケッチ',
+            alt: t('sketch.title'),
             aspectRatio: 2100 / 1438,
           },
           {
             src: './images/sketch_02.jpg',
-            alt: 'スケッチ',
+            alt: t('sketch.title'),
             aspectRatio: 800 / 1165,
           },
           {
             src: './images/sketch_03.jpg',
-            alt: 'スケッチ',
+            alt: t('sketch.title'),
             aspectRatio: 10 / 13,
           },
           {
             src: './images/sketch_04.jpg',
-            alt: 'スケッチ',
+            alt: t('sketch.title'),
             aspectRatio: 3 / 2,
           },
         ]}
@@ -569,36 +414,18 @@ function Content({ onChangeSection }: ContentProps) {
         secondaryColor="#8dc69c"
       />
       <Section
-        title="アーチ"
-        info={
-          <>
-            2004年
-            <br />
-            屋外用水性絵の具 / ベニヤ板
-          </>
-        }
-        description={
-          <>
-            <p>
-              高校の体育祭に向けて制作した「アーチ」と呼ばれる巨大壁画。
-              そのサイズは横7.2m、縦5.4mにもなる。
-              大きさで言えば、私の人生最大の作品だ。
-            </p>
-            <p>
-              白組所属だったため白虎をモチーフとした。
-              全8組の作品から来場者投票によって選ばれる「アーチ賞」を受賞した。
-            </p>
-          </>
-        }
+        title={t('arch.title')}
+        info={<Trans i18nKey="arch.info" />}
+        description={<Trans i18nKey="arch.description" />}
         images={[
           {
             src: './images/arch_01.jpg',
-            alt: 'アーチ',
+            alt: t('arch.title'),
             aspectRatio: 581 / 428,
           },
           {
             src: './images/arch_02.jpg',
-            alt: 'アーチ',
+            alt: t('arch.title'),
             aspectRatio: 4 / 3,
           },
         ]}
@@ -609,68 +436,52 @@ function Content({ onChangeSection }: ContentProps) {
         <div className={classes.anchorTitle}>アニメーション</div>
       </div>
       <Section
-        title="究極変形！グランドくまモン！"
-        info={
-          <>
-            2016年
-            <br />
-            手描きアニメーション: Photoshop / After Effects
-          </>
-        }
+        title={t('kumamon.title')}
+        info={<Trans i18nKey="kumamon.info" />}
         description={
-          <>
-            <p>
-              熊本地震からの復興を応援するために制作した、手描きのアニメーション作品。
-              くまモンがロボットへと変形する。
-            </p>
-            <p>
-              3Dソフトは使わず、Photoshopで1枚ずつ描いた絵をAfter
-              Effectsで映像化。
-              ニコニコ動画では人気を得て、1万回以上の再生とたくさんのコメントが寄せられた。
-            </p>
-            <div>
-              ニコニコ動画
-              <br />
-              <a
-                href="https://www.nicovideo.jp/watch/sm28850724"
-                target="_blank"
-                rel="noopener"
-              >
-                https://www.nicovideo.jp/watch/sm28850724
-              </a>
-            </div>
-            <div>
-              YouTube
-              <br />
-              <a
-                href="https://www.youtube.com/watch?v=MOs5TOVRKfA"
-                target="_blank"
-                rel="noopener"
-              >
-                https://www.youtube.com/watch?v=MOs5TOVRKfA
-              </a>
-            </div>
-          </>
+          <Trans
+            i18nKey="kumamon.description"
+            components={{
+              link1: (
+                <a
+                  href="https://www.nicovideo.jp/watch/sm28850724"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://www.nicovideo.jp/watch/sm28850724
+                </a>
+              ),
+              link2: (
+                <a
+                  href="https://www.youtube.com/watch?v=MOs5TOVRKfA"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://www.youtube.com/watch?v=MOs5TOVRKfA
+                </a>
+              ),
+            }}
+          />
         }
         images={[
           {
             src: './images/kumamon_01.jpg',
-            alt: '究極変形！グランドくまモン！',
+            alt: t('kumamon.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/kumamon_02.jpg',
-            alt: '究極変形！グランドくまモン！',
+            alt: t('kumamon.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/kumamon_03.jpg',
-            alt: '究極変形！グランドくまモン！',
+            alt: t('kumamon.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/kumamon_04.jpg',
-            alt: '究極変形！グランドくまモン！',
+            alt: t('kumamon.title'),
             aspectRatio: 16 / 9,
           },
         ]}
@@ -681,45 +492,28 @@ function Content({ onChangeSection }: ContentProps) {
         <div className={classes.anchorTitle}>アプリ</div>
       </div>
       <Section
-        title="Smart Controller"
-        info={
-          <>
-            2020年
-            <br />
-            Androidアプリ: React Native / Node-RED
-          </>
-        }
+        title={t('smartController.title')}
+        info={<Trans i18nKey="smartController.info" />}
         description={
-          <>
-            <p>
-              家中の家電を一括管理するためのスマホアプリ。
-              公開用のアプリではなく、我が家専用に開発したもの。
-            </p>
-            <p>
-              私の家では、家電の制御方式が赤外線、HTTP、ZigBeeとそれぞれ異なり、スマート家電として扱うには別々の専用アプリが必要だった。
-            </p>
-            <p>
-              そこで異なるプロトコルの制御をNode-REDバックエンドで一元化し、フロントエンドはReact
-              Nativeを使って単体アプリとしてビルド。
-              家族のスマホにインストールした。
-            </p>
-            <div>
-              リポジトリ（フロントエンドのみ）
-              <br />
-              <a
-                href="https://github.com/htanjo/smart-controller"
-                target="_blank"
-                rel="noopener"
-              >
-                https://github.com/htanjo/smart-controller
-              </a>
-            </div>
-          </>
+          <Trans
+            i18nKey="smartController.description"
+            components={{
+              link1: (
+                <a
+                  href="https://github.com/htanjo/smart-controller"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  https://github.com/htanjo/smart-controller
+                </a>
+              ),
+            }}
+          />
         }
         images={[
           {
             src: './images/smart_controller_01.jpg',
-            alt: 'Smart Controller',
+            alt: t('smartController.title'),
             aspectRatio: 3 / 4,
           },
         ]}
@@ -730,44 +524,28 @@ function Content({ onChangeSection }: ContentProps) {
         <div className={classes.anchorTitle}>模型</div>
       </div>
       <Section
-        title="ドイツ重戦車 タイガー I"
-        info={
-          <>
-            2020～2021年
-            <br />
-            タミヤ 1/35スケールプラモデル
-          </>
-        }
-        description={
-          <>
-            <p>
-              コロナ禍に制作した、戦車のプラモデル。キットをそのまま組むのではなく、ディテールアップやウェザリングを施し、戦車の重厚感を演出した。
-            </p>
-            <p>
-              陰影の強調、木目、金属質、塗装やマーキングの剥がれ、雨だれ跡、泥汚れ、錆など、さまざまな表現を凝縮させた。
-              また、兵士フィギュアの顔は綿棒の先端よりも小さいが、目鼻口まで丁寧に面相筆で塗り分けた。
-            </p>
-          </>
-        }
+        title={t('tiger1.title')}
+        info={<Trans i18nKey="tiger1.info" />}
+        description={<Trans i18nKey="tiger1.description" />}
         images={[
           {
             src: './images/tiger_1_01.jpg',
-            alt: 'ドイツ重戦車 タイガー I',
+            alt: t('tiger1.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/tiger_1_02.jpg',
-            alt: 'ドイツ重戦車 タイガー I',
+            alt: t('tiger1.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/tiger_1_03.jpg',
-            alt: 'ドイツ重戦車 タイガー I',
+            alt: t('tiger1.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/tiger_1_04.jpg',
-            alt: 'ドイツ重戦車 タイガー I',
+            alt: t('tiger1.title'),
             aspectRatio: 16 / 9,
           },
         ]}
@@ -775,45 +553,28 @@ function Content({ onChangeSection }: ContentProps) {
         secondaryColor="#ccc24e"
       />
       <Section
-        title="リバース・トライク"
-        info={
-          <>
-            2021～2022年
-            <br />
-            コトブキヤ 1/12スケールプラモデル
-          </>
-        }
-        description={
-          <>
-            <p>
-              ゲーム「DEATH STRANDING」に登場するバイクのプラモデル。
-              こちらは基本に忠実をコンセプトに制作した。
-            </p>
-            <p>
-              実際のゲーム画面を参考に全塗装し、パーツ同士の合わせ目消しやデカールの段差消しまで丁寧に処理した。
-              いずれウェザリング塗装を施す予定で、あえてマット調の仕上げとしている。
-            </p>
-          </>
-        }
+        title={t('reverseTrike.title')}
+        info={<Trans i18nKey="reverseTrike.info" />}
+        description={<Trans i18nKey="reverseTrike.description" />}
         images={[
           {
             src: './images/reverse_trike_01.jpg',
-            alt: 'リバース・トライク',
+            alt: t('reverseTrike.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/reverse_trike_02.jpg',
-            alt: 'リバース・トライク',
+            alt: t('reverseTrike.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/reverse_trike_03.jpg',
-            alt: 'リバース・トライク',
+            alt: t('reverseTrike.title'),
             aspectRatio: 16 / 9,
           },
           {
             src: './images/reverse_trike_04.jpg',
-            alt: 'リバース・トライク',
+            alt: t('reverseTrike.title'),
             aspectRatio: 16 / 9,
           },
         ]}
@@ -824,44 +585,23 @@ function Content({ onChangeSection }: ContentProps) {
         <div className={classes.anchorTitle}>ハードウェア</div>
       </div>
       <Section
-        title="自作PC"
-        info={
-          <>
-            2005年～現在
-            <br />
-            Windows / Linuxパソコン
-          </>
-        }
-        description={
-          <>
-            <p>
-              PCの自作は学生時代から行っている。
-              現在使用しているPCは、クリエイティブとゲーミング性能に特化させたもの。
-            </p>
-            <p>
-              処理能力と静音性を両立させるため、パーツ選定だけでなく、電圧からファン回転数まで細かくチューニングが施してある。
-              近年巨大化したグラフィックスカードの固定や、裏配線もバッチリ。
-            </p>
-            <p>
-              他にも家庭内のサーバとして、Raspberry
-              PiベースのLinuxマシンも運用している。
-            </p>
-          </>
-        }
+        title={t('pc.title')}
+        info={<Trans i18nKey="pc.info" />}
+        description={<Trans i18nKey="pc.description" />}
         images={[
           {
             src: './images/pc_01.jpg',
-            alt: '自作PC',
+            alt: t('pc.title'),
             aspectRatio: 4 / 3,
           },
           {
             src: './images/pc_02.jpg',
-            alt: '自作PC',
+            alt: t('pc.title'),
             aspectRatio: 4 / 5,
           },
           {
             src: './images/pc_03.jpg',
-            alt: '自作PC',
+            alt: t('pc.title'),
             aspectRatio: 4 / 3,
           },
         ]}

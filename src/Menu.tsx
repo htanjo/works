@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import classes from './Menu.module.scss';
 
 interface MenuProps {
@@ -6,6 +7,7 @@ interface MenuProps {
 }
 
 function Menu({ activeId }: MenuProps) {
+  const { t } = useTranslation();
   const menu = useRef<HTMLDivElement>(null);
   const menuList = useRef<HTMLUListElement>(null);
   const activeItem = useRef<HTMLElement | null>(null);
@@ -71,28 +73,28 @@ function Menu({ activeId }: MenuProps) {
       <div className={classes.menuContainer}>
         <ul className={classes.menuList} ref={menuList}>
           <li className={classes.menuListItem}>
-            <a href="#game">ゲーム</a>
+            <a href="#game">{t('ゲーム')}</a>
           </li>
           <li className={classes.menuListItem}>
-            <a href="#mod">MOD</a>
+            <a href="#mod">{t('MOD')}</a>
           </li>
           <li className={classes.menuListItem}>
-            <a href="#3dcg">3DCG</a>
+            <a href="#3dcg">{t('3DCG')}</a>
           </li>
           <li className={classes.menuListItem}>
-            <a href="#painting">絵画</a>
+            <a href="#painting">{t('絵画')}</a>
           </li>
           <li className={classes.menuListItem}>
-            <a href="#animation">アニメーション</a>
+            <a href="#animation">{t('アニメーション')}</a>
           </li>
           <li className={classes.menuListItem}>
-            <a href="#app">アプリ</a>
+            <a href="#app">{t('アプリ')}</a>
           </li>
           <li className={classes.menuListItem}>
-            <a href="#model">模型</a>
+            <a href="#model">{t('模型')}</a>
           </li>
           <li className={classes.menuListItem}>
-            <a href="#hardware">ハードウェア</a>
+            <a href="#hardware">{t('ハードウェア')}</a>
           </li>
         </ul>
         {activeItem.current && (

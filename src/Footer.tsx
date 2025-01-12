@@ -1,6 +1,8 @@
+import { useTranslation } from 'react-i18next';
 import classes from './Footer.module.scss';
 
 function Footer() {
+  const { t } = useTranslation();
   const year = new Date().getFullYear();
 
   return (
@@ -16,7 +18,7 @@ function Footer() {
               <div>Hiroyuki Tanjo</div>
             </div>
             <div className={classes.description}>
-              Web開発者。趣味でいろいろなものを作っています。
+              {t('Web開発者。趣味でいろいろなものを作っています。')}
             </div>
             <ul className={classes.social}>
               <li>
