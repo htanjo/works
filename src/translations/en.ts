@@ -250,7 +250,7 @@ const en = {
   },
   pc: {
     title: 'Custom-Built PC',
-    info: '<strong>2005 - Present</strong><br />Windows / Linuxパソコン',
+    info: '<strong>2005 - Present</strong><br />Windows / Linux PC',
     description: `<p>
         I've been building custom PCs since my student days.
         The current PC is designed with a focus on both creative and gaming performance.
