@@ -74,6 +74,7 @@
   display: flex;
   flex-direction: row;
   flex-grow: 1;
+  justify-content: flex-end;
   gap: 12px;
   grid-row-end: span 2;
   position: relative;
@@ -87,6 +88,12 @@
   gap: 12px;
   &.even {
     margin-top: 10%;
+  }
+  &:first-child:last-child {
+    flex-basis: 50%;
+    flex-grow: 0;
+    box-sizing: border-box;
+    padding-left: 6px;
   }
 }
 .image {
@@ -156,9 +163,14 @@
   }
   .images {
     gap: 12px;
+    justify-content: center;
   }
   .imageColumn {
     gap: 12px;
+    &:first-child:last-child {
+      padding-left: 6px;
+      padding-right: 6px;
+    }
   }
 }
 @media (max-width: 767px) {
@@ -170,6 +182,10 @@
   }
   .imageColumn {
     gap: 8px;
+    &:first-child:last-child {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
   }
 }
 @media print {

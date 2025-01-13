@@ -74,50 +74,54 @@ function Section({
           <div className={classes.info}>{info}</div>
         </div>
         <div className={classes.images}>
-          <motion.div
-            className={`${classes.imageColumn} ${classes.even}`}
-            initial={{ transform: `translateY(${translateY}px)` }}
-            whileInView={{ transform: 'translateY(0px)' }}
-            transition={{ duration: 0.5 }}
-            viewport={{
-              once: false,
-              margin: `1000px 0px -${translateY * 0.25}px 0px`,
-            }}
-          >
-            {evenImages.map((image) => (
-              <Zoom key={image.src} zoomMargin={zoomMargin}>
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  style={{ aspectRatio: image.aspectRatio }}
-                  className={classes.image}
-                  loading={image.disableLazyLoad ? 'eager' : 'lazy'}
-                />
-              </Zoom>
-            ))}
-          </motion.div>
-          <motion.div
-            className={`${classes.imageColumn} ${classes.odd}`}
-            initial={{ transform: `translateY(${translateY * 2}px)` }}
-            whileInView={{ transform: 'translateY(0px)' }}
-            transition={{ duration: 0.5 }}
-            viewport={{
-              once: false,
-              margin: `1000px 0px -${translateY * 0.25}px 0px`,
-            }}
-          >
-            {oddImages.map((image) => (
-              <Zoom key={image.src} zoomMargin={zoomMargin}>
-                <img
-                  src={image.src}
-                  alt={image.alt}
-                  style={{ aspectRatio: image.aspectRatio }}
-                  className={classes.image}
-                  loading={image.disableLazyLoad ? 'eager' : 'lazy'}
-                />
-              </Zoom>
-            ))}
-          </motion.div>
+          {evenImages.length > 0 && (
+            <motion.div
+              className={`${classes.imageColumn} ${classes.even}`}
+              initial={{ transform: `translateY(${translateY}px)` }}
+              whileInView={{ transform: 'translateY(0px)' }}
+              transition={{ duration: 0.5 }}
+              viewport={{
+                once: false,
+                margin: `1000px 0px -${translateY * 0.25}px 0px`,
+              }}
+            >
+              {evenImages.map((image) => (
+                <Zoom key={image.src} zoomMargin={zoomMargin}>
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    style={{ aspectRatio: image.aspectRatio }}
+                    className={classes.image}
+                    loading={image.disableLazyLoad ? 'eager' : 'lazy'}
+                  />
+                </Zoom>
+              ))}
+            </motion.div>
+          )}
+          {oddImages.length > 0 && (
+            <motion.div
+              className={`${classes.imageColumn}`}
+              initial={{ transform: `translateY(${translateY * 2}px)` }}
+              whileInView={{ transform: 'translateY(0px)' }}
+              transition={{ duration: 0.5 }}
+              viewport={{
+                once: false,
+                margin: `1000px 0px -${translateY * 0.25}px 0px`,
+              }}
+            >
+              {oddImages.map((image) => (
+                <Zoom key={image.src} zoomMargin={zoomMargin}>
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    style={{ aspectRatio: image.aspectRatio }}
+                    className={classes.image}
+                    loading={image.disableLazyLoad ? 'eager' : 'lazy'}
+                  />
+                </Zoom>
+              ))}
+            </motion.div>
+          )}
         </div>
         <div className={classes.description}>{description}</div>
       </div>
