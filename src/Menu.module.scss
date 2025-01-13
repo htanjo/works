@@ -75,13 +75,6 @@
   &.active button {
     color: #f29d8a;
   }
-  &:not(.active) button {
-    color: #867c7c;
-    &:hover,
-    &:focus {
-      color: var(--paper-color);
-    }
-  }
 }
 .arrow {
   position: absolute;
