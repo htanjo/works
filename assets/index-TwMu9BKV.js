@@ -83,7 +83,7 @@ Error generating stack: `+f.message+`
       </p>
       <p>
         リリース時にはHot Mods
-        1位を獲得、リリース8ヶ月後の2025年1月時点で1.5万ダウンロードを記録した。
+        1位を獲得、リリース8ヶ月後の2025年1月時点で1.6万ダウンロードを記録した。
       </p>
       <div>
         <strong>MOD配布ページ</strong>
@@ -265,7 +265,7 @@ Error generating stack: `+f.message+`
         Preserving the essence of the original aesthetics, the mod enhances color depth and vibrancy, earning high praise from the modding community on Nexus Mods.
       </p>
       <p>
-        Upon release, it ranked #1 on Hot Mods and, as of January 2025—eight months post-launch—it has achieved 15,000 downloads.
+        Upon release, it ranked #1 on Hot Mods and, as of January 2025—eight months post-launch—it has achieved 16,000 downloads.
       </p>
       <div>
         <strong>Mod Download Page</strong>
