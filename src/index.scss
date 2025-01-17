@@ -47,8 +47,8 @@ strong {
   display: none;
 }
 [data-rmiz-modal-overlay='visible'] {
-  background-color: #ffffff66 !important;
-  backdrop-filter: blur(36px);
+  background-color: #ffffff99 !important;
+  backdrop-filter: blur(12px);
   filter: saturate(1.5);
 }
 // @media print {
