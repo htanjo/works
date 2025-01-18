@@ -232,7 +232,7 @@ Error generating stack: `+f.message+`
       </p>
       <p>
         Built entirely from scratch with minimal use of pre-existing assets, this project includes modeling, material creation, and programming.
-        By combining PBR (Physically Based Rendering) with lightmap baking, it achieves visuals approaching the quality seen on PS5, taking full advantage of its diorama-like design.
+        By combining PBR (Physically Based Rendering) with lightmap baking, it achieves visuals approaching the quality seen on PS5, taking full advantage of its small-scale game world.
       </p>
       <div>
         <strong>Game Page (Technical Demo)</strong>
