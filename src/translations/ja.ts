@@ -88,12 +88,12 @@ const ja = {
         しかし残念ながら、ゲーム本体の最新パッチにより互換性がなくなり、このMODは一般公開しなかった。
       </p>`,
   },
-  dran: {
-    title: '変形！黄金剣士ドラン！',
-    info: '<strong>2024年</strong><br />WebGLアニメーション: Blender / Babylon.js / React / TypeScript',
+  goldran: {
+    title: '黄金合体！ゴルドラン！',
+    info: '<strong>2025年</strong><br />WebGLアニメーション: Blender / Babylon.js / React / TypeScript',
     description: `<p>
         アニメ「黄金勇者ゴルドラン」を題材にしたインタラクティブな3D Webアニメーション。
-        ページをスクロールしていくと車からロボットへと変形する。
+        ページをスクロールしていくと車からロボットへと変形し、さらにドラゴンと合体して巨大な勇者となる。
         <br />
         自動再生機能も実装した。普通の動画との違いは、マウスやデバイスの動きに合わせて視点を動かせること。
         好きなアングルで変形の様子を眺めることができる。

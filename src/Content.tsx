@@ -214,11 +214,11 @@ function Content({ onChangeSection }: ContentProps) {
         <div className={classes.anchorTitle}>{t('3DCG')}</div>
       </div>
       <Section
-        title={t('dran.title')}
-        info={<Trans i18nKey="dran.info" />}
+        title={t('goldran.title')}
+        info={<Trans i18nKey="goldran.info" />}
         description={
           <Trans
-            i18nKey="dran.description"
+            i18nKey="goldran.description"
             components={{
               link1: (
                 <a
@@ -252,23 +252,23 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: './images/dran_01.jpg',
-            alt: t('dra.title'),
+            src: './images/goldran_01.jpg',
+            alt: t('goldran.title'),
             aspectRatio: 1 / 1,
           },
           {
-            src: './images/dran_02.jpg',
-            alt: t('dra.title'),
+            src: './images/goldran_02.jpg',
+            alt: t('goldran.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/dran_03.jpg',
-            alt: t('dra.title'),
+            src: './images/goldran_03.jpg',
+            alt: t('goldran.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/dran_04.jpg',
-            alt: t('dra.title'),
+            src: './images/goldran_04.jpg',
+            alt: t('goldran.title'),
             aspectRatio: 16 / 10,
           },
         ]}

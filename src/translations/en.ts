@@ -86,12 +86,12 @@ const en = {
         Unfortunately, due to compatibility issues introduced by the game's latest patch, this mod was never publicly released.
       </p>`,
   },
-  dran: {
-    title: 'Transform! Golden Swordsman DRAN!',
-    info: '<strong>2024</strong><br />WebGL Animation: Blender / Babylon.js / React / TypeScript',
+  goldran: {
+    title: 'Golden Combination! Goldran!',
+    info: '<strong>2025</strong><br />WebGL Animation: Blender / Babylon.js / React / TypeScript',
     description: `<p>
         An interactive 3D web animation based on the anime "The Brave of Gold Goldran."
-        As you scroll through the page, the transformation from a car to a robot unfolds before your eyes.
+        As you scroll through the page, the vehicle transforms into a robot, and then combines with a dragon to become a giant brave.
         <br />
         An autoplay feature is included, but unlike regular videos, you can move the camera to explore the scene from different angles as the transformation takes place.
       </p>
