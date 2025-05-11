@@ -96,7 +96,7 @@ Error generating stack: `+f.message+`
       </p>
       <p>
         しかし残念ながら、ゲーム本体の最新パッチにより互換性がなくなり、このMODは一般公開しなかった。
-      </p>`},goldran:{title:"黄金合体！ゴルドラン！",info:"<strong>2025年</strong><br />WebGLアニメーション: Blender / Babylon.js / React / TypeScript",description:`<p>
+      </p>`},goldran:{title:"黄金合体！ゴルドラン！",info:"<strong>2024～2025年</strong><br />WebGLアニメーション: Blender / Babylon.js / React / TypeScript",description:`<p>
         アニメ「黄金勇者ゴルドラン」を題材にしたインタラクティブな3D Webアニメーション。
         ページをスクロールしていくと車からロボットへと変形し、さらにドラゴンと合体して巨大な勇者となる。
         <br />
@@ -278,7 +278,7 @@ Error generating stack: `+f.message+`
       </p>
       <p>
         Unfortunately, due to compatibility issues introduced by the game's latest patch, this mod was never publicly released.
-      </p>`},goldran:{title:"Golden Combination! Goldran!",info:"<strong>2025</strong><br />WebGL Animation: Blender / Babylon.js / React / TypeScript",description:`<p>
+      </p>`},goldran:{title:"Golden Combination! Goldran!",info:"<strong>2024 - 2025</strong><br />WebGL Animation: Blender / Babylon.js / React / TypeScript",description:`<p>
         An interactive 3D web animation based on the anime "The Brave of Gold Goldran."
         As you scroll through the page, the vehicle transforms into a robot, and then combines with a dragon to become a giant brave.
         <br />
