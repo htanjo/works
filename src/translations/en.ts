@@ -88,7 +88,7 @@ const en = {
   },
   goldran: {
     title: 'Golden Combination! Goldran!',
-    info: '<strong>2025</strong><br />WebGL Animation: Blender / Babylon.js / React / TypeScript',
+    info: '<strong>2024 - 2025</strong><br />WebGL Animation: Blender / Babylon.js / React / TypeScript',
     description: `<p>
         An interactive 3D web animation based on the anime "The Brave of Gold Goldran."
         As you scroll through the page, the vehicle transforms into a robot, and then combines with a dragon to become a giant brave.

@@ -90,7 +90,7 @@ const ja = {
   },
   goldran: {
     title: '黄金合体！ゴルドラン！',
-    info: '<strong>2025年</strong><br />WebGLアニメーション: Blender / Babylon.js / React / TypeScript',
+    info: '<strong>2024～2025年</strong><br />WebGLアニメーション: Blender / Babylon.js / React / TypeScript',
     description: `<p>
         アニメ「黄金勇者ゴルドラン」を題材にしたインタラクティブな3D Webアニメーション。
         ページをスクロールしていくと車からロボットへと変形し、さらにドラゴンと合体して巨大な勇者となる。
