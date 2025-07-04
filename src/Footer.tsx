@@ -10,7 +10,7 @@ function Footer() {
       <div className={classes.primaryFooter}>
         <div className={classes.footerContainer}>
           <div className={classes.avatar}>
-            <img src="./avatar.jpg" alt="アバター" />
+            <img src="./avatar.webp" alt="アバター" />
           </div>
           <div className={classes.profile}>
             <div className={classes.name}>
