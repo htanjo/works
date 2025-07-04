@@ -378,7 +378,7 @@ function Content({ onChangeSection }: ContentProps) {
           {
             src: './images/fanart_05.jpg',
             alt: t('fanart.title'),
-            aspectRatio: 24 / 13,
+            aspectRatio: 4 / 3,
           },
         ]}
         primaryColor="#197593"
