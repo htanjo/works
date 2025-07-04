@@ -67,31 +67,31 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: './images/9th_floor_01.jpg',
+            src: './images/9th_floor_01.webp',
             alt: t('9thFloor.title'),
             aspectRatio: 16 / 9,
             disableLazyLoad: true,
           },
           {
-            src: './images/9th_floor_02.jpg',
+            src: './images/9th_floor_02.webp',
             alt: t('9thFloor.title'),
             aspectRatio: 16 / 9,
             disableLazyLoad: true,
           },
           {
-            src: './images/9th_floor_03.jpg',
+            src: './images/9th_floor_03.webp',
             alt: t('9thFloor.title'),
             aspectRatio: 16 / 9,
             disableLazyLoad: true,
           },
           {
-            src: './images/9th_floor_04.jpg',
+            src: './images/9th_floor_04.webp',
             alt: t('9thFloor.title'),
             aspectRatio: 16 / 9,
             disableLazyLoad: true,
           },
           {
-            src: './images/9th_floor_05.jpg',
+            src: './images/9th_floor_05.webp',
             alt: t('9thFloor.title'),
             aspectRatio: 16 / 9,
             disableLazyLoad: true,
@@ -121,22 +121,22 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: './images/pv3d_racing_01.jpg',
+            src: './images/pv3d_racing_01.webp',
             alt: t('pv3dRacing.title'),
             aspectRatio: 4 / 3,
           },
           {
-            src: './images/pv3d_racing_02.jpg',
+            src: './images/pv3d_racing_02.webp',
             alt: t('pv3dRacing.title'),
             aspectRatio: 4 / 3,
           },
           {
-            src: './images/pv3d_racing_03.jpg',
+            src: './images/pv3d_racing_03.webp',
             alt: t('pv3dRacing.title'),
             aspectRatio: 4 / 3,
           },
           {
-            src: './images/pv3d_racing_04.jpg',
+            src: './images/pv3d_racing_04.webp',
             alt: t('pv3dRacing.title'),
             aspectRatio: 4 / 3,
           },
@@ -168,22 +168,22 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: './images/emotional_vision_01.jpg',
+            src: './images/emotional_vision_01.webp',
             alt: t('emotionalVision.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/emotional_vision_02.jpg',
+            src: './images/emotional_vision_02.webp',
             alt: t('emotionalVision.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/emotional_vision_03.jpg',
+            src: './images/emotional_vision_03.webp',
             alt: t('emotionalVision.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/emotional_vision_04.jpg',
+            src: './images/emotional_vision_04.webp',
             alt: t('emotionalVision.title'),
             aspectRatio: 16 / 9,
           },
@@ -197,12 +197,12 @@ function Content({ onChangeSection }: ContentProps) {
         description={<Trans i18nKey="toussaintNaturalWeather.description" />}
         images={[
           {
-            src: './images/toussaint_natural_weather_01.jpg',
+            src: './images/toussaint_natural_weather_01.webp',
             alt: t('toussaintNaturalWeather.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/toussaint_natural_weather_02.jpg',
+            src: './images/toussaint_natural_weather_02.webp',
             alt: t('toussaintNaturalWeather.title'),
             aspectRatio: 16 / 9,
           },
@@ -252,22 +252,22 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: './images/goldran_01.jpg',
+            src: './images/goldran_01.webp',
             alt: t('goldran.title'),
             aspectRatio: 1 / 1,
           },
           {
-            src: './images/goldran_02.jpg',
+            src: './images/goldran_02.webp',
             alt: t('goldran.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/goldran_03.jpg',
+            src: './images/goldran_03.webp',
             alt: t('goldran.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/goldran_04.jpg',
+            src: './images/goldran_04.webp',
             alt: t('goldran.title'),
             aspectRatio: 16 / 10,
           },
@@ -281,17 +281,17 @@ function Content({ onChangeSection }: ContentProps) {
         description={<Trans i18nKey="sculpt.description" />}
         images={[
           {
-            src: './images/sculpt_01.jpg',
+            src: './images/sculpt_01.webp',
             alt: t('sculpt.title'),
             aspectRatio: 935 / 772,
           },
           {
-            src: './images/sculpt_02.jpg',
+            src: './images/sculpt_02.webp',
             alt: t('sculpt.title'),
             aspectRatio: 3 / 4,
           },
           {
-            src: './images/sculpt_03.jpg',
+            src: './images/sculpt_03.webp',
             alt: t('sculpt.title'),
             aspectRatio: 1 / 1,
           },
@@ -305,17 +305,17 @@ function Content({ onChangeSection }: ContentProps) {
         description={<Trans i18nKey="interior.description" />}
         images={[
           {
-            src: './images/interior_vr_01.jpg',
+            src: './images/interior_vr_01.webp',
             alt: t('interior.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/interior_vr_02.jpg',
+            src: './images/interior_vr_02.webp',
             alt: t('interior.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/interior_vr_03.jpg',
+            src: './images/interior_vr_03.webp',
             alt: t('interior.title'),
             aspectRatio: 16 / 9,
           },
@@ -356,27 +356,27 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: './images/fanart_01.jpg',
+            src: './images/fanart_01.webp',
             alt: t('fanart.title'),
             aspectRatio: 4 / 3,
           },
           {
-            src: './images/fanart_02.jpg',
+            src: './images/fanart_02.webp',
             alt: t('fanart.title'),
             aspectRatio: 3 / 4,
           },
           {
-            src: './images/fanart_03.jpg',
+            src: './images/fanart_03.webp',
             alt: t('fanart.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/fanart_04.jpg',
+            src: './images/fanart_04.webp',
             alt: t('fanart.title'),
             aspectRatio: 64 / 27,
           },
           {
-            src: './images/fanart_05.jpg',
+            src: './images/fanart_05.webp',
             alt: t('fanart.title'),
             aspectRatio: 4 / 3,
           },
@@ -390,22 +390,22 @@ function Content({ onChangeSection }: ContentProps) {
         description={<Trans i18nKey="sketch.description" />}
         images={[
           {
-            src: './images/sketch_01.jpg',
+            src: './images/sketch_01.webp',
             alt: t('sketch.title'),
             aspectRatio: 2100 / 1438,
           },
           {
-            src: './images/sketch_02.jpg',
+            src: './images/sketch_02.webp',
             alt: t('sketch.title'),
             aspectRatio: 800 / 1165,
           },
           {
-            src: './images/sketch_03.jpg',
+            src: './images/sketch_03.webp',
             alt: t('sketch.title'),
             aspectRatio: 10 / 13,
           },
           {
-            src: './images/sketch_04.jpg',
+            src: './images/sketch_04.webp',
             alt: t('sketch.title'),
             aspectRatio: 3 / 2,
           },
@@ -419,12 +419,12 @@ function Content({ onChangeSection }: ContentProps) {
         description={<Trans i18nKey="arch.description" />}
         images={[
           {
-            src: './images/arch_01.jpg',
+            src: './images/arch_01.webp',
             alt: t('arch.title'),
             aspectRatio: 581 / 428,
           },
           {
-            src: './images/arch_02.jpg',
+            src: './images/arch_02.webp',
             alt: t('arch.title'),
             aspectRatio: 4 / 3,
           },
@@ -465,22 +465,22 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: './images/kumamon_01.jpg',
+            src: './images/kumamon_01.webp',
             alt: t('kumamon.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/kumamon_02.jpg',
+            src: './images/kumamon_02.webp',
             alt: t('kumamon.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/kumamon_03.jpg',
+            src: './images/kumamon_03.webp',
             alt: t('kumamon.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/kumamon_04.jpg',
+            src: './images/kumamon_04.webp',
             alt: t('kumamon.title'),
             aspectRatio: 16 / 9,
           },
@@ -512,7 +512,7 @@ function Content({ onChangeSection }: ContentProps) {
         }
         images={[
           {
-            src: './images/smart_controller_01.jpg',
+            src: './images/smart_controller_01.webp',
             alt: t('smartController.title'),
             aspectRatio: 3 / 4,
           },
@@ -529,22 +529,22 @@ function Content({ onChangeSection }: ContentProps) {
         description={<Trans i18nKey="tiger1.description" />}
         images={[
           {
-            src: './images/tiger_1_01.jpg',
+            src: './images/tiger_1_01.webp',
             alt: t('tiger1.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/tiger_1_02.jpg',
+            src: './images/tiger_1_02.webp',
             alt: t('tiger1.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/tiger_1_03.jpg',
+            src: './images/tiger_1_03.webp',
             alt: t('tiger1.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/tiger_1_04.jpg',
+            src: './images/tiger_1_04.webp',
             alt: t('tiger1.title'),
             aspectRatio: 16 / 9,
           },
@@ -558,22 +558,22 @@ function Content({ onChangeSection }: ContentProps) {
         description={<Trans i18nKey="reverseTrike.description" />}
         images={[
           {
-            src: './images/reverse_trike_01.jpg',
+            src: './images/reverse_trike_01.webp',
             alt: t('reverseTrike.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/reverse_trike_02.jpg',
+            src: './images/reverse_trike_02.webp',
             alt: t('reverseTrike.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/reverse_trike_03.jpg',
+            src: './images/reverse_trike_03.webp',
             alt: t('reverseTrike.title'),
             aspectRatio: 16 / 9,
           },
           {
-            src: './images/reverse_trike_04.jpg',
+            src: './images/reverse_trike_04.webp',
             alt: t('reverseTrike.title'),
             aspectRatio: 16 / 9,
           },
@@ -590,17 +590,17 @@ function Content({ onChangeSection }: ContentProps) {
         description={<Trans i18nKey="pc.description" />}
         images={[
           {
-            src: './images/pc_01.jpg',
+            src: './images/pc_01.webp',
             alt: t('pc.title'),
             aspectRatio: 4 / 3,
           },
           {
-            src: './images/pc_02.jpg',
+            src: './images/pc_02.webp',
             alt: t('pc.title'),
             aspectRatio: 4 / 5,
           },
           {
-            src: './images/pc_03.jpg',
+            src: './images/pc_03.webp',
             alt: t('pc.title'),
             aspectRatio: 4 / 3,
           },
